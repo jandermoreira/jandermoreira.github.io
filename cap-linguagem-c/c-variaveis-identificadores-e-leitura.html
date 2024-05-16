@@ -806,7 +806,7 @@ Dica
 <span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="dv">0</span><span class="op">;</span></span>
 <span id="cb17-11"><a href="#cb17-11" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="sourceCode" id="cb18"><pre class="sourceCode terminal cell-output code-with-copy"><code class="sourceCode terminal"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>valor: 6.94518e-310</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb18"><pre class="sourceCode terminal cell-output code-with-copy"><code class="sourceCode terminal"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>valor: 6.92465e-310</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>O valor que é apresentado é efetivamente o conteúdo da variável dado pelos bytes que estão na memória. A saída produzida pelo programa é imprevisível.</p>
 </div>
 </div>
@@ -1117,8 +1117,14 @@ Dica
 <span id="cb39-26"><a href="#cb39-26" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb39-27"><a href="#cb39-27" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="dv">0</span><span class="op">;</span></span>
 <span id="cb39-28"><a href="#cb39-28" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="sourceCode" id="cb40"><pre class="sourceCode terminal cell-output code-with-copy"><code class="sourceCode terminal"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a>...</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb40"><pre class="sourceCode terminal cell-output code-with-copy"><code class="sourceCode terminal"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a>Digite um inteiro e um real: <span class="kw">320 44.5</span></span>
+<span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a>O inteiro é 320 e o o real é 44.5.</span>
+<span id="cb40-3"><a href="#cb40-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-4"><a href="#cb40-4" aria-hidden="true" tabindex="-1"></a>Digite um inteiro, um real e outro inteiro: <span class="kw">10 1.1 20</span></span>
+<span id="cb40-5"><a href="#cb40-5" aria-hidden="true" tabindex="-1"></a>Os inteiros são 10 e 20; o o real é 1.1.</span>
+<span id="cb40-6"><a href="#cb40-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-7"><a href="#cb40-7" aria-hidden="true" tabindex="-1"></a>Digite um real seguido por um caractere: <span class="kw">0.125ee</span></span>
+<span id="cb40-8"><a href="#cb40-8" aria-hidden="true" tabindex="-1"></a>O real é 0.125 e o caractere é e.</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Existem, naturalmente e previsivelmente, limitações nas leituras. Por exemplo, a última varredura usando <code>%lf%c</code> para obter um número real e um caractere esbarra na capacidade de análise dos caracteres digitados. Por exemplo, se o usuário digitar <code>0.1235A</code> é possível separar o 0,125 da letra <code>A</code>; se for digitado <code>0.125 A</code>, a variável <code>d</code> conterá o valor 0,125, mas <code>c</code> conterá o espaço, que é o próximo caractere depois do número, sendo o <code>A\n</code> que sobram ignorados. Além disso, é impossível com esse formato que o caractere seja um dígito, pois ele seria interpretado como parte do número e não como o caractere depois do número.</p>
 <p>O contorno de tais limitações foge do escopo deste material.</p>
 <!-- ::: {#exr-leitura-caractere-e}
@@ -1445,7 +1451,7 @@ as strtol(3).</code></pre>
 <span id="cb55-4"><a href="#cb55-4" aria-hidden="true" tabindex="-1"></a>   10 |     gets(entrada);</span>
 <span id="cb55-5"><a href="#cb55-5" aria-hidden="true" tabindex="-1"></a>      |     ^~~~</span>
 <span id="cb55-6"><a href="#cb55-6" aria-hidden="true" tabindex="-1"></a>      |     fgets</span>
-<span id="cb55-7"><a href="#cb55-7" aria-hidden="true" tabindex="-1"></a>/usr/bin/ld: /tmp/ccnaziih.o: na função "main":</span>
+<span id="cb55-7"><a href="#cb55-7" aria-hidden="true" tabindex="-1"></a>/usr/bin/ld: /tmp/ccRwSXTJ.o: na função "main":</span>
 <span id="cb55-8"><a href="#cb55-8" aria-hidden="true" tabindex="-1"></a>main.c:(.text+0x2f): aviso: the `gets' function is dangerous and should not </span>
 <span id="cb55-9"><a href="#cb55-9" aria-hidden="true" tabindex="-1"></a>be used.</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="sourceCode" id="cb56"><pre class="sourceCode terminal cell-output code-with-copy"><code class="sourceCode terminal"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a>Digite algo: <span class="kw">C é legal, mas não é simples...</span></span>
@@ -1482,7 +1488,7 @@ as strtol(3).</code></pre>
 <span id="cb59-4"><a href="#cb59-4" aria-hidden="true" tabindex="-1"></a>   12 |     gets(entrada);</span>
 <span id="cb59-5"><a href="#cb59-5" aria-hidden="true" tabindex="-1"></a>      |     ^~~~</span>
 <span id="cb59-6"><a href="#cb59-6" aria-hidden="true" tabindex="-1"></a>      |     fgets</span>
-<span id="cb59-7"><a href="#cb59-7" aria-hidden="true" tabindex="-1"></a>/usr/bin/ld: /tmp/ccXBpgpK.o: na função "main":</span>
+<span id="cb59-7"><a href="#cb59-7" aria-hidden="true" tabindex="-1"></a>/usr/bin/ld: /tmp/cckILS4P.o: na função "main":</span>
 <span id="cb59-8"><a href="#cb59-8" aria-hidden="true" tabindex="-1"></a>main.c:(.text+0x49): aviso: the `gets' function is dangerous and should not </span>
 <span id="cb59-9"><a href="#cb59-9" aria-hidden="true" tabindex="-1"></a>be used.</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="sourceCode" id="cb60"><pre class="sourceCode terminal cell-output code-with-copy"><code class="sourceCode terminal"><span id="cb60-1"><a href="#cb60-1" aria-hidden="true" tabindex="-1"></a>'valor' vale 10</span>
