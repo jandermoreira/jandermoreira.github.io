@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Construção de Algoritmos e Programação - 1&nbsp; Estruturas algorítmicas básicas para processamento de sequências de dados</title>
+<title>Construção de Algoritmos e Programação - 2&nbsp; Estruturas algorítmicas básicas para processamento de sequências de dados</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,7 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./algoritmos-desenvolvimento-de-algoritmos-para-processamento-de-sequencias.html" rel="next">
-<link href="./preambulo_prefacio.html" rel="prev">
+<link href="./algoritmos-nocoes.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -110,7 +110,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./algoritmos-processamento-basico-de-sequencias-de-dados.html">Processamento de sequências de dados</a></li><li class="breadcrumb-item"><a href="./algoritmos-processamento-basico-de-sequencias-de-dados.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Estruturas algorítmicas básicas para processamento de sequências de dados</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./algoritmos-processamento-basico-de-sequencias-de-dados.html">Processamento de sequências de dados</a></li><li class="breadcrumb-item"><a href="./algoritmos-processamento-basico-de-sequencias-de-dados.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Estruturas algorítmicas básicas para processamento de sequências de dados</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -162,7 +162,7 @@ window.Quarto = {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
- <span class="menu-text">Processamento de sequências de dados</span></a>
+ <span class="menu-text">Representação e uso de algoritmos</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Alternar seção">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -170,14 +170,31 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./algoritmos-nocoes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Noções de algoritmos</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text">Processamento de sequências de dados</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Alternar seção">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./algoritmos-processamento-basico-de-sequencias-de-dados.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Estruturas algorítmicas básicas para processamento de sequências de dados</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Estruturas algorítmicas básicas para processamento de sequências de dados</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./algoritmos-desenvolvimento-de-algoritmos-para-processamento-de-sequencias.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Desenvolvimento de algoritmos para processamento de sequências de dados</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Desenvolvimento de algoritmos para processamento de sequências de dados</span></span></a>
   </div>
 </li>
       </ul>
@@ -198,13 +215,13 @@ window.Quarto = {
     <h2 id="toc-title">Nesta página:</h2>
    
   <ul>
-  <li><a href="#sequências-de-dados" id="toc-sequências-de-dados" class="nav-link active" data-scroll-target="#sequências-de-dados"><span class="header-section-number">1.1</span> Sequências de dados</a></li>
-  <li><a href="#sec-caracterizacao-das-sequencias-de-dados" id="toc-sec-caracterizacao-das-sequencias-de-dados" class="nav-link" data-scroll-target="#sec-caracterizacao-das-sequencias-de-dados"><span class="header-section-number">1.2</span> Caracterização das sequências</a></li>
-  <li><a href="#fluxo-de-execução-com-repetições" id="toc-fluxo-de-execução-com-repetições" class="nav-link" data-scroll-target="#fluxo-de-execução-com-repetições"><span class="header-section-number">1.3</span> Fluxo de execução com repetições</a>
+  <li><a href="#sequências-de-dados" id="toc-sequências-de-dados" class="nav-link active" data-scroll-target="#sequências-de-dados"><span class="header-section-number">2.1</span> Sequências de dados</a></li>
+  <li><a href="#sec-caracterizacao-das-sequencias-de-dados" id="toc-sec-caracterizacao-das-sequencias-de-dados" class="nav-link" data-scroll-target="#sec-caracterizacao-das-sequencias-de-dados"><span class="header-section-number">2.2</span> Caracterização das sequências</a></li>
+  <li><a href="#fluxo-de-execução-com-repetições" id="toc-fluxo-de-execução-com-repetições" class="nav-link" data-scroll-target="#fluxo-de-execução-com-repetições"><span class="header-section-number">2.3</span> Fluxo de execução com repetições</a>
   <ul class="collapse">
-  <li><a href="#fluxo-com--enquanto-" id="toc-fluxo-com--enquanto-" class="nav-link" data-scroll-target="#fluxo-com--enquanto-"><span class="header-section-number">1.3.1</span> Fluxo com <strong>enquanto</strong></a></li>
-  <li><a href="#fluxo-com--repita-" id="toc-fluxo-com--repita-" class="nav-link" data-scroll-target="#fluxo-com--repita-"><span class="header-section-number">1.3.2</span> Fluxo com <strong>repita</strong></a></li>
-  <li><a href="#fluxo-com--para-" id="toc-fluxo-com--para-" class="nav-link" data-scroll-target="#fluxo-com--para-"><span class="header-section-number">1.3.3</span> Fluxo com <strong>para</strong></a></li>
+  <li><a href="#fluxo-com--enquanto-" id="toc-fluxo-com--enquanto-" class="nav-link" data-scroll-target="#fluxo-com--enquanto-"><span class="header-section-number">2.3.1</span> Fluxo com <strong>enquanto</strong></a></li>
+  <li><a href="#fluxo-com--repita-" id="toc-fluxo-com--repita-" class="nav-link" data-scroll-target="#fluxo-com--repita-"><span class="header-section-number">2.3.2</span> Fluxo com <strong>repita</strong></a></li>
+  <li><a href="#fluxo-com--para-" id="toc-fluxo-com--para-" class="nav-link" data-scroll-target="#fluxo-com--para-"><span class="header-section-number">2.3.3</span> Fluxo com <strong>para</strong></a></li>
   </ul></li>
   </ul>
 </nav>
@@ -212,9 +229,9 @@ window.Quarto = {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./algoritmos-processamento-basico-de-sequencias-de-dados.html">Processamento de sequências de dados</a></li><li class="breadcrumb-item"><a href="./algoritmos-processamento-basico-de-sequencias-de-dados.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Estruturas algorítmicas básicas para processamento de sequências de dados</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./algoritmos-processamento-basico-de-sequencias-de-dados.html">Processamento de sequências de dados</a></li><li class="breadcrumb-item"><a href="./algoritmos-processamento-basico-de-sequencias-de-dados.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Estruturas algorítmicas básicas para processamento de sequências de dados</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span id="sec-estruturas-algoritmicas-para-processamento-de-sequencias" class="quarto-section-identifier"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Estruturas algorítmicas básicas para processamento de sequências de dados</span></span></h1>
+<h1 class="title"><span id="sec-estruturas-algoritmicas-para-processamento-de-sequencias" class="quarto-section-identifier"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Estruturas algorítmicas básicas para processamento de sequências de dados</span></span></h1>
 </div>
 
 
@@ -233,51 +250,51 @@ window.Quarto = {
 
 <p><span class="math inline">\(\newcommand\Id[1]{\textit{#1}}\)</span></p>
 <p>Este capítulo considera o processamento de sequências de dados, o que significa repetir ações sobre cada dado individualmente. Em decorrência, também aborda outras ações que sejam repetitivas.</p>
-<section id="sequências-de-dados" class="level2" data-number="1.1">
-<h2 data-number="1.1" class="anchored" data-anchor-id="sequências-de-dados"><span class="header-section-number">1.1</span> Sequências de dados</h2>
+<section id="sequências-de-dados" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="sequências-de-dados"><span class="header-section-number">2.1</span> Sequências de dados</h2>
 <p>Uma sequência de dados ocorre quando, por exemplo, quando há uma coleção relativamente grande de dados a serem considerados por um algoritmo.</p>
-<p>Para exemplificar, inicialmente é considerado um problema simples: determinar o valor máximo entre três valores reais. Uma solução é dada no <a href="algoritmos-processamento-basico-de-sequencias-de-dados.html#alg-maximo-de-tres">Algoritmo 1.1</a>.</p>
+<p>Para exemplificar, inicialmente é considerado um problema simples: determinar o valor máximo entre três valores reais. Uma solução é dada no <a href="algoritmos-processamento-basico-de-sequencias-de-dados.html#alg-maximo-de-tres">Algoritmo 2.1</a>.</p>
 <div id="alg-maximo-de-tres">
 <figcaption class="figure-caption">
-<p>Algoritmo 1.1: Determinação do máximo entre três valores reais.</p>
+<p>Algoritmo 2.1: Determinação do máximo entre três valores reais.</p>
 </figcaption>
-<p><img src="_algxpar/pseudocode.5e23d7ec5102b8c15189d00c3e280fefd07de4d1.svg" class="img-fluid" alt="Algoritmo 1.1: Determinação do máximo entre três valores reais." width="648"></p>
+<p><img src="_algxpar/pseudocode.5e23d7ec5102b8c15189d00c3e280fefd07de4d1.svg" class="img-fluid" alt="Algoritmo 2.1: Determinação do máximo entre três valores reais." width="648"></p>
 </div>
-<p>Há um volume de dados pequeno para esse problema, com apenas três valores. Supondo agora que o problema abordasse não apenas uma trinca de valores, mas uma dezena deles. O <a href="algoritmos-processamento-basico-de-sequencias-de-dados.html#alg-maximo-de-dez">Algoritmo 1.2</a> apresenta uma solução para esse novo problema, seguindo a mesma linha de raciocínio da solução anterior.</p>
+<p>Há um volume de dados pequeno para esse problema, com apenas três valores. Supondo agora que o problema abordasse não apenas uma trinca de valores, mas uma dezena deles. O <a href="algoritmos-processamento-basico-de-sequencias-de-dados.html#alg-maximo-de-dez">Algoritmo 2.2</a> apresenta uma solução para esse novo problema, seguindo a mesma linha de raciocínio da solução anterior.</p>
 <div id="alg-maximo-de-dez">
 <figcaption class="figure-caption">
-<p>Algoritmo 1.2: Determinação do máximo entre dez valores reais.</p>
+<p>Algoritmo 2.2: Determinação do máximo entre dez valores reais.</p>
 </figcaption>
-<p><img src="_algxpar/pseudocode.eda47beeee6f9c7a4beda31e6c60b43737cc7e14.svg" class="img-fluid" alt="Algoritmo 1.2: Determinação do máximo entre dez valores reais." width="648"></p>
+<p><img src="_algxpar/pseudocode.eda47beeee6f9c7a4beda31e6c60b43737cc7e14.svg" class="img-fluid" alt="Algoritmo 2.2: Determinação do máximo entre dez valores reais." width="648"></p>
 </div>
 <p>Visivelmente é uma solução longa, embora não seja complexa. Entretanto, escrever uma solução similar para 20, 30 ou 100 valores usando essa estratégia é até factível, porém nada prática.</p>
-<p>Uma estrutura de organização alternativa para esse problema poderia ser como a apresentada no <a href="algoritmos-processamento-basico-de-sequencias-de-dados.html#alg-maximo-de-dez-sequencial">Algoritmo 1.3</a>.</p>
+<p>Uma estrutura de organização alternativa para esse problema poderia ser como a apresentada no <a href="algoritmos-processamento-basico-de-sequencias-de-dados.html#alg-maximo-de-dez-sequencial">Algoritmo 2.3</a>.</p>
 <div id="alg-maximo-de-dez-sequencial">
 <figcaption class="figure-caption">
-<p>Algoritmo 1.3: Determinação do máximo entre dez valores reais (versão 2).</p>
+<p>Algoritmo 2.3: Determinação do máximo entre dez valores reais (versão 2).</p>
 </figcaption>
-<p><img src="_algxpar/pseudocode.df97ad30acabb8d1585668d6121403b4ba59b1b5.svg" class="img-fluid" alt="Algoritmo 1.3: Determinação do máximo entre dez valores reais (versão 2)." width="648"></p>
+<p><img src="_algxpar/pseudocode.df97ad30acabb8d1585668d6121403b4ba59b1b5.svg" class="img-fluid" alt="Algoritmo 2.3: Determinação do máximo entre dez valores reais (versão 2)." width="648"></p>
 </div>
-<p>Para uma quantidade grande de valores, a solução pode ser ampliada apenas pelo acréscimo de novas variáveis <span class="math inline">\(v_i\)</span> e novas verificações. Não é elegante, mas certamente mais prática, e talvez mais clara, que no <a href="algoritmos-processamento-basico-de-sequencias-de-dados.html#alg-maximo-de-dez">Algoritmo 1.2</a>.</p>
-<p>Um ponto interessante do <a href="algoritmos-processamento-basico-de-sequencias-de-dados.html#alg-maximo-de-dez-sequencial">Algoritmo 1.3</a> é que, feita a entrada de uma variável e confrontado seu valor com o máximo, ela não é mais usada. Isso leva a uma nova versão: o <a href="algoritmos-processamento-basico-de-sequencias-de-dados.html#alg-maximo-de-dez-sequencial-reuso-variavel">Algoritmo 1.4</a>, na qual cada nova obtenção de valor reusa a mesma variável, substituindo seu valor por um novo da sequência de entrada.</p>
+<p>Para uma quantidade grande de valores, a solução pode ser ampliada apenas pelo acréscimo de novas variáveis <span class="math inline">\(v_i\)</span> e novas verificações. Não é elegante, mas certamente mais prática, e talvez mais clara, que no <a href="algoritmos-processamento-basico-de-sequencias-de-dados.html#alg-maximo-de-dez">Algoritmo 2.2</a>.</p>
+<p>Um ponto interessante do <a href="algoritmos-processamento-basico-de-sequencias-de-dados.html#alg-maximo-de-dez-sequencial">Algoritmo 2.3</a> é que, feita a entrada de uma variável e confrontado seu valor com o máximo, ela não é mais usada. Isso leva a uma nova versão: o <a href="algoritmos-processamento-basico-de-sequencias-de-dados.html#alg-maximo-de-dez-sequencial-reuso-variavel">Algoritmo 2.4</a>, na qual cada nova obtenção de valor reusa a mesma variável, substituindo seu valor por um novo da sequência de entrada.</p>
 <div id="alg-maximo-de-dez-sequencial-reuso-variavel">
 <figcaption class="figure-caption">
-<p>Algoritmo 1.4: Determinação do máximo entre dez valores reais (versão 3).</p>
+<p>Algoritmo 2.4: Determinação do máximo entre dez valores reais (versão 3).</p>
 </figcaption>
-<p><img src="_algxpar/pseudocode.74511bcdc9e1fff3536985f4ba0918178e39e236.svg" class="img-fluid" alt="Algoritmo 1.4: Determinação do máximo entre dez valores reais (versão 3)." width="648"></p>
+<p><img src="_algxpar/pseudocode.74511bcdc9e1fff3536985f4ba0918178e39e236.svg" class="img-fluid" alt="Algoritmo 2.4: Determinação do máximo entre dez valores reais (versão 3)." width="648"></p>
 </div>
 <p>Para essa versão, aumentar a quantidade de itens a serem processados pode ser feita apenas acrescentando-se novas leituras e novas comparações, algo como um “copia-e-colar”. Entretanto, ainda a solução não é minimamente elegante, mesmo sendo mais prática que as anteriores.</p>
-<p>Uma estrutura de repetição é uma ferramenta usada no pseudocódigo para indicar que algumas ações serão executadas várias vezes. Assim, A versão algorítmica final para o problema do máximo entre 10 valores pode ser dada pelo <a href="algoritmos-processamento-basico-de-sequencias-de-dados.html#alg-maximo-de-dez-sequencial-repeticao">Algoritmo 1.5</a>.</p>
+<p>Uma estrutura de repetição é uma ferramenta usada no pseudocódigo para indicar que algumas ações serão executadas várias vezes. Assim, A versão algorítmica final para o problema do máximo entre 10 valores pode ser dada pelo <a href="algoritmos-processamento-basico-de-sequencias-de-dados.html#alg-maximo-de-dez-sequencial-repeticao">Algoritmo 2.5</a>.</p>
 <div id="alg-maximo-de-dez-sequencial-repeticao">
 <figcaption class="figure-caption">
-<p>Algoritmo 1.5: Determinação do máximo entre dez valores reais (versão 4).</p>
+<p>Algoritmo 2.5: Determinação do máximo entre dez valores reais (versão 4).</p>
 </figcaption>
-<p><img src="_algxpar/pseudocode.32f915e25d367f8d8ec8f23ffda6026cf8838bfc.svg" class="img-fluid" alt="Algoritmo 1.5: Determinação do máximo entre dez valores reais (versão 4)." width="648"></p>
+<p><img src="_algxpar/pseudocode.32f915e25d367f8d8ec8f23ffda6026cf8838bfc.svg" class="img-fluid" alt="Algoritmo 2.5: Determinação do máximo entre dez valores reais (versão 4)." width="648"></p>
 </div>
 <p>A alteração desse algoritmo para processar, por exemplo, uma sequência de 1000 valores, requer apenas que a linha que indica “do segundo até o décimo” seja reescrita “do segundo até do milésimo”, contemplando uma solução para um novo problema, que é bem maior que os anteriores.</p>
 </section>
-<section id="sec-caracterizacao-das-sequencias-de-dados" class="level2" data-number="1.2">
-<h2 data-number="1.2" class="anchored" data-anchor-id="sec-caracterizacao-das-sequencias-de-dados"><span class="header-section-number">1.2</span> Caracterização das sequências</h2>
+<section id="sec-caracterizacao-das-sequencias-de-dados" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="sec-caracterizacao-das-sequencias-de-dados"><span class="header-section-number">2.2</span> Caracterização das sequências</h2>
 <p>Nos problemas computacionais, as sequências se apresentam de algumas formas bem características. Conquanto não sendo as únicas apresentações com que sequências podem assumir, estas são as mais comuns:</p>
 <ul>
 <li>as que simplesmente acabam;</li>
@@ -292,12 +309,12 @@ window.Quarto = {
 <p> As duas primeiras caracterizações de sequências, as que acabam e as que possuem sentinela, são chamadas repetições indefinidas ou abertas. Nelas, não é conhecido previamente quantas vezes as ações de processamento serão repetidas. Em contraposição, quando o comprimento da sequência é fixo ou precedido de um valor indicando quantos itens são, a repetição se caracteriza como definida, sabendo-se quantas vezes as ações serão executadas.</p>
 <p>Dado o universo de dados existentes, estas possibilidades não contemplam, é claro, todas as sequências, mas restringem nichos de grande relevância neste contexto.</p>
 </section>
-<section id="fluxo-de-execução-com-repetições" class="level2" data-number="1.3">
-<h2 data-number="1.3" class="anchored" data-anchor-id="fluxo-de-execução-com-repetições"><span class="header-section-number">1.3</span> Fluxo de execução com repetições</h2>
+<section id="fluxo-de-execução-com-repetições" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="fluxo-de-execução-com-repetições"><span class="header-section-number">2.3</span> Fluxo de execução com repetições</h2>
 <p>Nos algoritmos escritos com pseudocódigo há três estruturas clássicas para indicar a repetição, embora não sejam as únicas. Elas são representadas por <strong>enquanto</strong>, <strong>repita</strong> e <strong>para</strong>.</p>
 <p>Quando as repetições são indefinidas quanto ao número de vezes, as estruturas <strong>enquanto</strong> e <strong>repita</strong> são empregadas. Repetições sobre sequências de dados para as quais se sabe antecipadamente o número de iterações, ou seja, para as repetições definidas, a estrutura <strong>para</strong> é utilizada.</p>
-<section id="fluxo-com--enquanto-" class="level3" data-number="1.3.1">
-<h3 data-number="1.3.1" class="anchored" data-anchor-id="fluxo-com--enquanto-"><span class="header-section-number">1.3.1</span> Fluxo com <strong>enquanto</strong></h3>
+<section id="fluxo-com--enquanto-" class="level3" data-number="2.3.1">
+<h3 data-number="2.3.1" class="anchored" data-anchor-id="fluxo-com--enquanto-"><span class="header-section-number">2.3.1</span> Fluxo com <strong>enquanto</strong></h3>
 <p>O <strong>enquanto</strong> é uma estrutura que indica uma repetição. Ela se apresenta como apresentado na sequência.</p>
 <div>
 <figcaption class="figure-caption">
@@ -307,25 +324,25 @@ window.Quarto = {
 <p>A lógica que define o fluxo de execução com a estrutura <strong>enquanto</strong> é baseada em uma <em>condição</em>, a qual pode ser avaliada como verdadeira ou falsa. Se a condição for verdadeira, todas as <em>instruções condicionadas</em> da estrutura são executadas uma vez. Ao final da execução, a condição é avaliada novamente e nova execução das ações internas pode ou não ser feita, a depender do resultado.</p>
 <p>Como consequência, a estrutura indica que as <em>instruções condicionadas</em> podem ser executadas uma quantidade indefinida de vezes, que pode ser zero ou mais. É, assim, importante destacar que, sendo a <em>condição</em> falsa já na primeira verificação, nenhuma instrução interna é executada.</p>
 <p>Para que a estrutura tenha sentido prático, é esperado que as instruções alterem de alguma forma dos dados para que, eventualmente, a condição se torne falsa e a repetição se encerre.</p>
-<p>O processamento de sequências de dados cuja quantidade de itens não seja previamente conhecida é bastante comum e, assim, uma repetição de obtenção de valores com <strong>enquanto</strong> é bastante apropriada. O <a href="algoritmos-processamento-basico-de-sequencias-de-dados.html#alg-contador-maior-18">Algoritmo 1.6</a> é um exemplo dessa necessidade. Ele apresenta uma solução para, dadas várias idades de pessoas (podendo não haver nenhuma), determinar quantas delas são maiores ou iguais a 18.</p>
+<p>O processamento de sequências de dados cuja quantidade de itens não seja previamente conhecida é bastante comum e, assim, uma repetição de obtenção de valores com <strong>enquanto</strong> é bastante apropriada. O <a href="algoritmos-processamento-basico-de-sequencias-de-dados.html#alg-contador-maior-18">Algoritmo 2.6</a> é um exemplo dessa necessidade. Ele apresenta uma solução para, dadas várias idades de pessoas (podendo não haver nenhuma), determinar quantas delas são maiores ou iguais a 18.</p>
 <div id="alg-contador-maior-18">
 <figcaption class="figure-caption">
-<p>Algoritmo 1.6: Determinação da quantidade de pessoas com maioridade legal.</p>
+<p>Algoritmo 2.6: Determinação da quantidade de pessoas com maioridade legal.</p>
 </figcaption>
-<p><img src="_algxpar/pseudocode.9106513b43cc193fed6249926f106f6377d322c1.svg" class="img-fluid" alt="Algoritmo 1.6: Determinação da quantidade de pessoas com maioridade legal." width="648"></p>
+<p><img src="_algxpar/pseudocode.9106513b43cc193fed6249926f106f6377d322c1.svg" class="img-fluid" alt="Algoritmo 2.6: Determinação da quantidade de pessoas com maioridade legal." width="648"></p>
 </div>
 <p>O <strong>enquanto</strong> verifica se há dados disponíveis como entrada e, havendo, obtém o dado (uma idade) e, sendo maior ou igual a 18 anos, conta essa ocorrência. Quando não houver mais dados na entrada, a repetição se encerra e a contagem é apresentada. Para o caso da entrada ser vazia, a condição do <strong>enquanto</strong> já é falsa logo no início e, assim, nenhuma leitura é feita, situação em que o contador permanece com valor zero.</p>
-<p>O uso do sentinela de dados também é viável de ter sua lógica organizada como <strong>enquanto</strong>. Um exemplo simples é a soma de uma série de números reais, todos maiores que zero. O sentinela será o número zero, que não faz parte dos dados válidos. Uma solução para esse problema é apresentada no <a href="algoritmos-processamento-basico-de-sequencias-de-dados.html#alg-contador-com-sentinela-enquanto">Algoritmo 1.7</a>.</p>
+<p>O uso do sentinela de dados também é viável de ter sua lógica organizada como <strong>enquanto</strong>. Um exemplo simples é a soma de uma série de números reais, todos maiores que zero. O sentinela será o número zero, que não faz parte dos dados válidos. Uma solução para esse problema é apresentada no <a href="algoritmos-processamento-basico-de-sequencias-de-dados.html#alg-contador-com-sentinela-enquanto">Algoritmo 2.7</a>.</p>
 <div id="alg-contador-com-sentinela-enquanto">
 <figcaption class="figure-caption">
-<p>Algoritmo 1.7: Soma de uma sequência de números reais com sentinela.</p>
+<p>Algoritmo 2.7: Soma de uma sequência de números reais com sentinela.</p>
 </figcaption>
-<p><img src="_algxpar/pseudocode.3ee8531909e41de0cce51466629396983b58b6cd.svg" class="img-fluid" alt="Algoritmo 1.7: Soma de uma sequência de números reais com sentinela." width="648"></p>
+<p><img src="_algxpar/pseudocode.3ee8531909e41de0cce51466629396983b58b6cd.svg" class="img-fluid" alt="Algoritmo 2.7: Soma de uma sequência de números reais com sentinela." width="648"></p>
 </div>
 <p>A estratégia é fazer, antes da repetição, uma primeira leitura, que pode ser um valor válido ou o próprio sentinela (quando sequência de números está vazia). Antes de somar esse valor, é feita a comparação com o sentinela. Sendo o valor zero, nenhuma repetição é efetuada e a soma zero é o resultado apresentado. Caso seja um valor válido, ele é somado e, antes de nova verificação, o próximo valor da sequência de entrada é obtido, fechando um ciclo.</p>
 </section>
-<section id="fluxo-com--repita-" class="level3" data-number="1.3.2">
-<h3 data-number="1.3.2" class="anchored" data-anchor-id="fluxo-com--repita-"><span class="header-section-number">1.3.2</span> Fluxo com <strong>repita</strong></h3>
+<section id="fluxo-com--repita-" class="level3" data-number="2.3.2">
+<h3 data-number="2.3.2" class="anchored" data-anchor-id="fluxo-com--repita-"><span class="header-section-number">2.3.2</span> Fluxo com <strong>repita</strong></h3>
 <p>A estrutura <strong>repita</strong> também se aplica a repetições indefinidas. Sua estrutura é como se apresenta a seguir.</p>
 <div>
 <figcaption class="figure-caption">
@@ -335,25 +352,25 @@ window.Quarto = {
 <p>O <strong>repita</strong> é uma estrutura que possui uma <em>condição</em> a ser verifica e sua avaliação é feita depois da execução dos <em>comandos condicionados</em>. Dessa forma, todos os comandos internos são executados e, então, a <em>condição</em> é verificada; resultando em falso, uma nova repetição é feita, sendo verdadeira, repetição se encerra.</p>
 <p>Por sua estrutura, os comandos internos do <strong>repita</strong> são executados pelo menos uma vez.</p>
 <p>Para exemplificar, pode ser considerado o problema da verificação da senha digitada por um usuário para acesso ao sistema, cujas regras são: se a senha digitada for correta, o acesso é dado; caso haja dez erros consecutivos, uma penalização de tempo (“aguarde cinco minutos para tentar novamente”) é aplicada. A quantidade de senhas que serão verificadas é desconhecido: se houver a inserção correta da senha logo no início há apenas uma verificação; se houver senhas inválidas, outras verificações serão necessárias.</p>
-<p>O <a href="algoritmos-processamento-basico-de-sequencias-de-dados.html#alg-senha-acesso">Algoritmo 1.8</a> ilustra como essa questão pode ser abordada.</p>
+<p>O <a href="algoritmos-processamento-basico-de-sequencias-de-dados.html#alg-senha-acesso">Algoritmo 2.8</a> ilustra como essa questão pode ser abordada.</p>
 <div id="alg-senha-acesso">
 <figcaption class="figure-caption">
-<p>Algoritmo 1.8: Verificação de senha para acesso a um sistema.</p>
+<p>Algoritmo 2.8: Verificação de senha para acesso a um sistema.</p>
 </figcaption>
-<p><img src="_algxpar/pseudocode.036d86ce66991ba4879b1137df151e2bff033ddb.svg" class="img-fluid" alt="Algoritmo 1.8: Verificação de senha para acesso a um sistema." width="648"></p>
+<p><img src="_algxpar/pseudocode.036d86ce66991ba4879b1137df151e2bff033ddb.svg" class="img-fluid" alt="Algoritmo 2.8: Verificação de senha para acesso a um sistema." width="648"></p>
 </div>
 <p>Nessa solução, a repetição somente se encerra com a digitação da senha correta, o que pode levar uma eternidade. O algoritmo não detalha como a senha é efetivamente verificada, o que não é, porém, relevante no momento.</p>
-<p>Sequências de dados com valor sentinela também podem ser processadas usando-se a estrutura <strong>repita</strong>. O problema resolvido pelo <a href="algoritmos-processamento-basico-de-sequencias-de-dados.html#alg-contador-com-sentinela-enquanto">Algoritmo 1.7</a>, que usa -enquanto, tem sua versão com <strong>repita</strong> apresentada no <a href="algoritmos-processamento-basico-de-sequencias-de-dados.html#alg-contador-com-sentinela-repita">Algoritmo 1.9</a>.</p>
+<p>Sequências de dados com valor sentinela também podem ser processadas usando-se a estrutura <strong>repita</strong>. O problema resolvido pelo <a href="algoritmos-processamento-basico-de-sequencias-de-dados.html#alg-contador-com-sentinela-enquanto">Algoritmo 2.7</a>, que usa -enquanto, tem sua versão com <strong>repita</strong> apresentada no <a href="algoritmos-processamento-basico-de-sequencias-de-dados.html#alg-contador-com-sentinela-repita">Algoritmo 2.9</a>.</p>
 <div id="alg-contador-com-sentinela-repita">
 <figcaption class="figure-caption">
-<p>Algoritmo 1.9: Soma de uma sequência de números reais com sentinela (versão 2).</p>
+<p>Algoritmo 2.9: Soma de uma sequência de números reais com sentinela (versão 2).</p>
 </figcaption>
-<p><img src="_algxpar/pseudocode.5efa2dad5de66ff607eececd45492eefd0dfed1b.svg" class="img-fluid" alt="Algoritmo 1.9: Soma de uma sequência de números reais com sentinela (versão 2)." width="648"></p>
+<p><img src="_algxpar/pseudocode.5efa2dad5de66ff607eececd45492eefd0dfed1b.svg" class="img-fluid" alt="Algoritmo 2.9: Soma de uma sequência de números reais com sentinela (versão 2)." width="648"></p>
 </div>
 <p>Nessa solução, a cada repetição é obtido um valor da entrada e a soma é feita apenas para os valores que não sejam iguais ao sentinela. Quando o valor sentinela é obtido da entrada, ele é ignorado e, em seguida, a repetição se encerra e o resultado final é apresentado. Caso não haja valores para serem somados, o resultado zero é apresentado.</p>
 </section>
-<section id="fluxo-com--para-" class="level3" data-number="1.3.3">
-<h3 data-number="1.3.3" class="anchored" data-anchor-id="fluxo-com--para-"><span class="header-section-number">1.3.3</span> Fluxo com <strong>para</strong></h3>
+<section id="fluxo-com--para-" class="level3" data-number="2.3.3">
+<h3 data-number="2.3.3" class="anchored" data-anchor-id="fluxo-com--para-"><span class="header-section-number">2.3.3</span> Fluxo com <strong>para</strong></h3>
 <p>O <strong>para</strong> é indicado para repetições definidas, ou seja, para aquelas em que a quantidade de repetições é conhecida de antemão. A seguir é apresenta a estrutura do <strong>para</strong>.</p>
 <div>
 <figcaption class="figure-caption">
@@ -818,13 +835,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./preambulo_prefacio.html" class="pagination-link  aria-label=" {{&lt;="" meta="" book.subtitle="" &gt;}}"="">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Algoritmos para quem já sabe programar</span>
+      <a href="./algoritmos-nocoes.html" class="pagination-link  aria-label=" &lt;span="" de="" algoritmos&lt;="" span&gt;"="">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Noções de algoritmos</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./algoritmos-desenvolvimento-de-algoritmos-para-processamento-de-sequencias.html" class="pagination-link" aria-label="<span class='chapter-number'>2</span>&nbsp; <span class='chapter-title'>Desenvolvimento de algoritmos para processamento de sequências de dados</span>">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Desenvolvimento de algoritmos para processamento de sequências de dados</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./algoritmos-desenvolvimento-de-algoritmos-para-processamento-de-sequencias.html" class="pagination-link" aria-label="<span class='chapter-number'>3</span>&nbsp; <span class='chapter-title'>Desenvolvimento de algoritmos para processamento de sequências de dados</span>">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Desenvolvimento de algoritmos para processamento de sequências de dados</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
