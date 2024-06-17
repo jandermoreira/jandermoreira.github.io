@@ -601,7 +601,7 @@ main.c:36:4: error: expected identifier or ‘(’ before ‘}’ token
       |    ^</code></pre>
 <p>O erro acima foi causado apenas por um <code>}</code> inserido no lugar errado. Todas as outras mensagens são decorrentes desta falha na interpretação, a qual impede a sequência da análise e gera uma cascata de erros.</p>
 <p>Em suma, os programas são para as pessoas lerem.</p>
-<p>No <span class="quarto-unresolved-ref">?sec-guia-de-estilo</span> são apresentadas as orientações de escrita seguidas neste livro, mas as seções seguintes introduzem os pontos iniciais, justificando suas importâncias.</p>
+<p>No <a href="#sec-guia-de-estilo" class="quarto-xref"><span class="quarto-unresolved-ref">sec-guia-de-estilo</span></a> são apresentadas as orientações de escrita seguidas neste livro, mas as seções seguintes introduzem os pontos iniciais, justificando suas importâncias.</p>
 <p>A escrita de um bom programa em C recai, necessariamente, na organização visual do código, ou seja, pela disposição espacial dos comandos, instruções e pontuações ao longo do código.</p>
 </section>
 <section id="indentação" class="level2" data-number="10.3">
@@ -822,7 +822,7 @@ Dica
 </section>
 <section id="localização-da-declaração-de-variáveis" class="level2" data-number="10.7">
 <h2 data-number="10.7" class="anchored" data-anchor-id="localização-da-declaração-de-variáveis"><span class="header-section-number">10.7</span> Localização da declaração de variáveis</h2>
-<p>Embora uma variável possa ser declarada em inúmeras localizações dentro de um código fonte e ainda mantê-lo correto e coerente, é preciso reforçar que o local em que as declarações ocorrem favorecem o entendimento do propósito do programa e de sua lógica. Este tema é abordado de maneira rápida na <a href="c-escopo-basico-de-declaracoes.html#sec-declaracoes-e-validade" class="quarto-xref"><span>Seção 9.1</span></a>.</p>
+<p>Embora uma variável possa ser declarada em inúmeras localizações dentro de um código fonte e ainda mantê-lo correto e coerente, é preciso reforçar que o local em que as declarações ocorrem favorecem o entendimento do propósito do programa e de sua lógica. Este tema é abordado de maneira rápida na <a href="#sec-declaracoes-e-validade" class="quarto-xref"><span class="quarto-unresolved-ref">sec-declaracoes-e-validade</span></a>.</p>
 <p>Por hábitos “ancestrais”, de quando a linguagem C não admitia a mistura entre declarações e código, ainda persiste a prática de declarar todas as variáveis juntas no início do bloco. Assim, nas versões iniciais da linguagem os programas deveriam necessariamente declarar todas suas variáveis antes da primeira linha que tivesse um comando ou chamada de função. Segue um exemplo.</p>
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode c code-with-copy"><code class="sourceCode c"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co">/*</span></span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="co">Conversões de distância de metros para centímetros, pés, jardas e polegadas</span></span>
@@ -930,7 +930,7 @@ Dica
 <span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a>    <span class="co">// Outras instruções...</span></span>
 <span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Desta forma, o fim do bloco fica com a mesma indentação da estrutura que o iniciou.</p>
-<p>Por questões de estilo (<span class="quarto-unresolved-ref">?sec-guia-de-estilo</span>), há programadores que preferem que as chaves sejam abertas na linha consecutiva. Isso naturalmente não é um problema, desde que o padrão seja mantido para todo o código. Na sequência são apresentadas variações do posicionamento das chaves, porém em todas o alinhamento de indentação é mantido.</p>
+<p>Por questões de estilo (<a href="#sec-guia-de-estilo" class="quarto-xref"><span class="quarto-unresolved-ref">sec-guia-de-estilo</span></a>), há programadores que preferem que as chaves sejam abertas na linha consecutiva. Isso naturalmente não é um problema, desde que o padrão seja mantido para todo o código. Na sequência são apresentadas variações do posicionamento das chaves, porém em todas o alinhamento de indentação é mantido.</p>
 <div class="sourceCode" id="cb21"><pre class="sourceCode c code-with-copy"><code class="sourceCode c"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span><span class="op">(</span>a <span class="op">&gt;</span> <span class="dv">0</span><span class="op">)</span></span>
 <span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="op">{</span></span>
 <span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>    <span class="co">// Instruções...</span></span>
