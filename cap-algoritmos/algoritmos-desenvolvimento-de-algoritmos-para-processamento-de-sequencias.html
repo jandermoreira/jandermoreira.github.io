@@ -281,7 +281,7 @@ window.Quarto = {
 <figcaption class="figure-caption">
 <p>Algoritmo 3.1: Determinação do número de crianças em uma coleção de idades zero ou mais itens (versão com imprecisão).</p>
 </figcaption>
-<p><img src="_algxpar/pseudocode.c6e5ca7bfadb33675f71fb1fada71b364a48b16d.svg" class="img-fluid" alt="Algoritmo 3.1: Determinação do número de crianças em uma coleção de idades zero ou mais itens (versão com imprecisão)." width="648"></p>
+<p><img src="algxpar/pseudocode.c6e5ca7bfadb33675f71fb1fada71b364a48b16d.svg" class="img-fluid" alt="Algoritmo 3.1: Determinação do número de crianças em uma coleção de idades zero ou mais itens (versão com imprecisão)." width="648"></p>
 </div>
 <p>O uso da estrutura <strong>enquanto</strong> é relevante, pois controla uma quantidade indeterminada de idades como entrada e trata, também, o caso dessa quantidade ser nula.</p>
 <p>Esse algoritmo contém um elemento de imprecisão. No caso, por exemplo, de não haver nenhuma idade abaixo dos 12&nbsp;anos, a condição do <strong>se</strong> nunca será verdadeira e nenhuma contagem é feita. Porém, a última instrução explicita que que uma contagem que nunca foi feita deva ser apresentada.</p>
@@ -290,7 +290,7 @@ window.Quarto = {
 <figcaption class="figure-caption">
 <p>Algoritmo 3.2: Determinação do número de crianças em uma coleção de idades zero ou mais itens (versão com imprecisão).</p>
 </figcaption>
-<p><img src="_algxpar/pseudocode.f21c32a7b0109aecf8bb8d7236b623ce5211046e.svg" class="img-fluid" alt="Algoritmo 3.2: Determinação do número de crianças em uma coleção de idades zero ou mais itens (versão com imprecisão)." width="648"></p>
+<p><img src="algxpar/pseudocode.f21c32a7b0109aecf8bb8d7236b623ce5211046e.svg" class="img-fluid" alt="Algoritmo 3.2: Determinação do número de crianças em uma coleção de idades zero ou mais itens (versão com imprecisão)." width="648"></p>
 </div>
 <p>Nesta versão, <span class="math inline">\(\Id{contador}\)</span> é uma variável usada para fazer a contagem, começando explicitamente com zero, o que deixa claro o valor que será apresentado caso não haja nenhuma repetição.</p>
 <p>O princípio da contagem é a atualização do valor de uma variável com seu sucessor, de forma que “adicione 1 a <span class="math inline">\(\Id{contador}\)</span>” significa <span class="math inline">\({\Id{contador} \gets \Id{contador} + 1}\)</span>.</p>
@@ -301,7 +301,7 @@ window.Quarto = {
 <figcaption class="figure-caption">
 <p>Algoritmo 3.3: Determinação do número de crianças em uma coleção de idades zero ou mais itens com sentinela (versão 1).</p>
 </figcaption>
-<p><img src="_algxpar/pseudocode.d97e5ec81993434f9c835a4ef9defbb46c6e8e0c.svg" class="img-fluid" alt="Algoritmo 3.3: Determinação do número de crianças em uma coleção de idades zero ou mais itens com sentinela (versão 1)." width="648"></p>
+<p><img src="algxpar/pseudocode.d97e5ec81993434f9c835a4ef9defbb46c6e8e0c.svg" class="img-fluid" alt="Algoritmo 3.3: Determinação do número de crianças em uma coleção de idades zero ou mais itens com sentinela (versão 1)." width="648"></p>
 </div>
 <p>Essa solução usa o <strong>enquanto</strong> para controlar a aparição do valor sentinela. Há uma primeira leitura antes da repetição e, caso já apareça o valor sentinela, não é feita nenhuma repetição e o valor da contagem é zero. Se o primeiro valor for uma idade, ela é verificada para a contagem. Antes de nova verificação no <strong>enquanto</strong>, o próximo valor da sequência é obtido e, logo em seguida, verificado na condição do <strong>enquanto</strong>.</p>
 <p>O <a href="algoritmos-desenvolvimento-de-algoritmos-para-processamento-de-sequencias.html#alg-quantidade-criancas-sequencia-sentinela-repita">Algoritmo 3.4</a> é outra solução para a sequência com sentinela usando <strong>repita</strong>.</p>
@@ -309,7 +309,7 @@ window.Quarto = {
 <figcaption class="figure-caption">
 <p>Algoritmo 3.4: Determinação do número de crianças em uma coleção de idades zero ou mais itens com sentinela (versão 2).</p>
 </figcaption>
-<p><img src="_algxpar/pseudocode.c9743e6bc271eb3db0097681f4ae9f9b213d271a.svg" class="img-fluid" alt="Algoritmo 3.4: Determinação do número de crianças em uma coleção de idades zero ou mais itens com sentinela (versão 2)." width="648"></p>
+<p><img src="algxpar/pseudocode.c9743e6bc271eb3db0097681f4ae9f9b213d271a.svg" class="img-fluid" alt="Algoritmo 3.4: Determinação do número de crianças em uma coleção de idades zero ou mais itens com sentinela (versão 2)." width="648"></p>
 </div>
 <p>Com o uso da estrutura <strong>repita</strong>, obrigatoriamente os comandos internos serão executados pelo menos uma vez. Caso a sequência de idades esteja vazia, o valor obtido será o sentinela, o qual é desconsiderado no <strong>se</strong> e a repetição já se encerra no <strong>até que</strong>, o que resulta em <span class="math inline">\(\Id{contador}\)</span> igual a zero. Caso o valor não seja o sentinela, a idade é analisada e o contador incrementado se necessário, implicando em novo ciclo de repetição.</p>
 <p>A questão de contagem de idades pode, por exemplo, também ser aplicada a um problema para o qual a quantidade de idades a ser analisada seja predefinido. Supondo agora a contagem de crianças para uma coleção com quantidade fixa de 100 idades, a solução pode ser dada pelo <a href="algoritmos-desenvolvimento-de-algoritmos-para-processamento-de-sequencias.html#alg-quantidade-criancas-sequencia-conhecida">Algoritmo 3.5</a>. Como o valor é fixo, a estrutura <strong>para</strong> é empregada para a repetição.</p>
@@ -317,14 +317,14 @@ window.Quarto = {
 <figcaption class="figure-caption">
 <p>Algoritmo 3.5: Determinação do número de crianças em uma coleção de 100 idades.</p>
 </figcaption>
-<p><img src="_algxpar/pseudocode.72bd7122cb95e34a5460b0b66561ea104e827f31.svg" class="img-fluid" alt="Algoritmo 3.5: Determinação do número de crianças em uma coleção de 100 idades." width="648"></p>
+<p><img src="algxpar/pseudocode.72bd7122cb95e34a5460b0b66561ea104e827f31.svg" class="img-fluid" alt="Algoritmo 3.5: Determinação do número de crianças em uma coleção de 100 idades." width="648"></p>
 </div>
 <p>Como outra possibilidade, o problema pode considerar uma sequência para a qual seja informada sua quantidade. Por exemplo, para uma sequência de 10&nbsp;idades, a quantidade 10 é conhecida antes da repetição. O@alg-quantidade-criancas-sequencia-informada considera que o comprimento da sequência esteja disponível antes de cada idade.</p>
 <div id="alg-quantidade-criancas-sequencia-informada">
 <figcaption class="figure-caption">
 <p>Algoritmo 3.6: Determinação do número de crianças em uma coleção de idades com zero ou mais itens precedida pela quantidade de itens.</p>
 </figcaption>
-<p><img src="_algxpar/pseudocode.230453f00917abc35f0b76f1e86e94277382611d.svg" class="img-fluid" alt="Algoritmo 3.6: Determinação do número de crianças em uma coleção de idades com zero ou mais itens precedida pela quantidade de itens." width="648"></p>
+<p><img src="algxpar/pseudocode.230453f00917abc35f0b76f1e86e94277382611d.svg" class="img-fluid" alt="Algoritmo 3.6: Determinação do número de crianças em uma coleção de idades com zero ou mais itens precedida pela quantidade de itens." width="648"></p>
 </div>
 <p>Nesse algoritmo, os requisitos são a quantidade e os valores das idades. Antes da repetição, o número de itens deve ser obtido (variável <span class="math inline">\(\Id{quantidade}\)</span>) e a repetição, usando um <strong>para</strong>, executa a obtenção e a análise de cada idade na quantidade de vezes informada.</p>
 <p>Nas duas soluções que usam o <strong>para</strong>, a variável de controle da repetição (<span class="math inline">\(i\)</span>) é irrelevante para a solução do problema, sendo usada exclusivamente como indicador para o número de execuções.</p>
@@ -336,7 +336,7 @@ window.Quarto = {
 <div>
 <figcaption class="figure-caption">
 </figcaption>
-<p><img src="_algxpar/pseudocode.e70d64ba7124e3097180cef8d562442dcb51c3ae.svg" class="img-fluid" alt="" width="648"></p>
+<p><img src="algxpar/pseudocode.e70d64ba7124e3097180cef8d562442dcb51c3ae.svg" class="img-fluid" alt="" width="648"></p>
 </div>
 <p>Esta sequência de ações gradativamente calculam <span class="math inline">\(12 + 18 + 31\)</span>.</p>
 <p>O problema exemplo a ser resolvido agora envolve a apresentação das entradas e saídas de um caixa ao longo do dia. Cada transação feita é registrada por um valor em reais, sendo valores positivos indicativos de entrada de dinheiro no caixa e, em consequência, valores negativos, as saídas. Como transações com valor nulo não fazem sentido neste contexto, o valor R$0,00 é usado como sentinela para indicar o fim da sequência de valores de transações. O objetivo é apresentar o total de entradas e de saídas, além da diferença entre eles.</p>
@@ -345,7 +345,7 @@ window.Quarto = {
 <figcaption class="figure-caption">
 <p>Algoritmo 3.7: Cálculo do montante de entrada e de saída a partir de uma sequência de valores de transações (com sentinela).</p>
 </figcaption>
-<p><img src="_algxpar/pseudocode.4c5afd2c9ad251d72563b7f98f208a7ef35419c9.svg" class="img-fluid" alt="Algoritmo 3.7: Cálculo do montante de entrada e de saída a partir de uma sequência de valores de transações (com sentinela)." width="648"></p>
+<p><img src="algxpar/pseudocode.4c5afd2c9ad251d72563b7f98f208a7ef35419c9.svg" class="img-fluid" alt="Algoritmo 3.7: Cálculo do montante de entrada e de saída a partir de uma sequência de valores de transações (com sentinela)." width="648"></p>
 </div>
 <p>A estratégia de varredura dos valores das transações é o mesmo do <a href="algoritmos-desenvolvimento-de-algoritmos-para-processamento-de-sequencias.html#alg-quantidade-criancas-sequencia-sentinela-enquanto">Algoritmo 3.3</a>, com a obtenção do primeiro valor antes do <strong>enquanto</strong> e a obtenção de cada sucessor no final, antes de nova verificação da condição.</p>
 <p>A iniciação dos somadores <span class="math inline">\(\Id{soma\_entradas}\)</span> e <span class="math inline">\(\Id{soma\_saídas}\)</span> é feita com zero. A cada transação, um ou outro tem seu valor aumentado pelo montante da transação atual.</p>
@@ -357,7 +357,7 @@ window.Quarto = {
 <div>
 <figcaption class="figure-caption">
 </figcaption>
-<p><img src="_algxpar/pseudocode.b4432f87c58c070a8fcf115f755f55f8ba5651ba.svg" class="img-fluid" alt="" width="648"></p>
+<p><img src="algxpar/pseudocode.b4432f87c58c070a8fcf115f755f55f8ba5651ba.svg" class="img-fluid" alt="" width="648"></p>
 </div>
 <p>Uma questão que surge é sobre qual deve ser o valor inicial da variável quem mantém o mínimo ou o máximo. A resposta, naturalmente, é que a variável deve ser iniciada com um valor que garanta que as substituições ocorram corretamente.</p>
 <!-- Há dois cenários comuns para busca por mínimos e máximos. Em um deles, há uma faixa de valores possíveis para os dados, como a idade de pessoas, por exemplo, em que os valores são sempre maiores ou iguais a zero e menores que 150 anos (para trabalhar com folga). O outro cenário é aquele em que não há limitações diretas, como valores reais genéricos. -->
@@ -367,14 +367,14 @@ window.Quarto = {
 <figcaption class="figure-caption">
 <p>Algoritmo 3.8: Determinação da idade mínima e máxima em uma coleção de idades precedida pelo número de itens.</p>
 </figcaption>
-<p><img src="_algxpar/pseudocode.277cbea5fdd9a63365b7365017ed6718d44ce5f5.svg" class="img-fluid" alt="Algoritmo 3.8: Determinação da idade mínima e máxima em uma coleção de idades precedida pelo número de itens." width="648"></p>
+<p><img src="algxpar/pseudocode.277cbea5fdd9a63365b7365017ed6718d44ce5f5.svg" class="img-fluid" alt="Algoritmo 3.8: Determinação da idade mínima e máxima em uma coleção de idades precedida pelo número de itens." width="648"></p>
 </div>
 <p>Uma alternativa comum é iniciar com valores que certamente serão substituídos, como apresentado no <a href="algoritmos-desenvolvimento-de-algoritmos-para-processamento-de-sequencias.html#alg-idade-minima-maxima-infinito">Algoritmo 3.9</a>.</p>
 <div id="alg-idade-minima-maxima-infinito">
 <figcaption class="figure-caption">
 <p>Algoritmo 3.9: Determinação da idade mínima e máxima em uma coleção de idades precedida pelo número de itens.</p>
 </figcaption>
-<p><img src="_algxpar/pseudocode.bc83fe5048d864822bdeccb688e14d2566420e07.svg" class="img-fluid" alt="Algoritmo 3.9: Determinação da idade mínima e máxima em uma coleção de idades precedida pelo número de itens." width="648"></p>
+<p><img src="algxpar/pseudocode.bc83fe5048d864822bdeccb688e14d2566420e07.svg" class="img-fluid" alt="Algoritmo 3.9: Determinação da idade mínima e máxima em uma coleção de idades precedida pelo número de itens." width="648"></p>
 </div>
 <p>Nesta solução, qualquer que seja a primeira idade, ela certamente será menor que <span class="math inline">\(+\infty\)</span> e maior que <span class="math inline">\(-\infty\)</span>, forçando as substituições de <span class="math inline">\(\Id{idade}_{min}\)</span> e <span class="math inline">\(\Id{idade}_{max}\)</span>. No caso de idades, as iniciações poderiam ser, respectivamente, com 200 anos (com uma boa folga) e -1, ambos valores fora do intervalo de idades aceitável.</p>
 </section>
@@ -389,7 +389,7 @@ window.Quarto = {
 <figcaption class="figure-caption">
 <p>Algoritmo 3.10: Determinação da pontuação média para uma coleção de pontuações.</p>
 </figcaption>
-<p><img src="_algxpar/pseudocode.095bfd70cc1e30d7cb7f509cc248eb7899962007.svg" class="img-fluid" alt="Algoritmo 3.10: Determinação da pontuação média para uma coleção de pontuações." width="648"></p>
+<p><img src="algxpar/pseudocode.095bfd70cc1e30d7cb7f509cc248eb7899962007.svg" class="img-fluid" alt="Algoritmo 3.10: Determinação da pontuação média para uma coleção de pontuações." width="648"></p>
 </div>
 </section>
 <section id="porcentagens" class="level4">
@@ -400,7 +400,7 @@ window.Quarto = {
 <figcaption class="figure-caption">
 <p>Algoritmo 3.11: Determinação, para uma coleção de pontuações, a porcentagem de pontuações de 90 a 100.</p>
 </figcaption>
-<p><img src="_algxpar/pseudocode.e3528520f0107f7ab552206630b03a4bb82901e0.svg" class="img-fluid" alt="Algoritmo 3.11: Determinação, para uma coleção de pontuações, a porcentagem de pontuações de 90 a 100." width="648"></p>
+<p><img src="algxpar/pseudocode.e3528520f0107f7ab552206630b03a4bb82901e0.svg" class="img-fluid" alt="Algoritmo 3.11: Determinação, para uma coleção de pontuações, a porcentagem de pontuações de 90 a 100." width="648"></p>
 </div>
 <!-- ## Determinação de ocorrência -->
 

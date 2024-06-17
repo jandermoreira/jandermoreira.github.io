@@ -258,14 +258,14 @@ window.Quarto = {
 <figcaption class="figure-caption">
 <p>Algoritmo 2.1: Determinação do máximo entre três valores reais.</p>
 </figcaption>
-<p><img src="_algxpar/pseudocode.5e23d7ec5102b8c15189d00c3e280fefd07de4d1.svg" class="img-fluid" alt="Algoritmo 2.1: Determinação do máximo entre três valores reais." width="648"></p>
+<p><img src="algxpar/pseudocode.5e23d7ec5102b8c15189d00c3e280fefd07de4d1.svg" class="img-fluid" alt="Algoritmo 2.1: Determinação do máximo entre três valores reais." width="648"></p>
 </div>
 <p>Há um volume de dados pequeno para esse problema, com apenas três valores. Supondo agora que o problema abordasse não apenas uma trinca de valores, mas uma dezena deles. O <a href="algoritmos-processamento-basico-de-sequencias-de-dados.html#alg-maximo-de-dez">Algoritmo 2.2</a> apresenta uma solução para esse novo problema, seguindo a mesma linha de raciocínio da solução anterior.</p>
 <div id="alg-maximo-de-dez">
 <figcaption class="figure-caption">
 <p>Algoritmo 2.2: Determinação do máximo entre dez valores reais.</p>
 </figcaption>
-<p><img src="_algxpar/pseudocode.eda47beeee6f9c7a4beda31e6c60b43737cc7e14.svg" class="img-fluid" alt="Algoritmo 2.2: Determinação do máximo entre dez valores reais." width="648"></p>
+<p><img src="algxpar/pseudocode.eda47beeee6f9c7a4beda31e6c60b43737cc7e14.svg" class="img-fluid" alt="Algoritmo 2.2: Determinação do máximo entre dez valores reais." width="648"></p>
 </div>
 <p>Visivelmente é uma solução longa, embora não seja complexa. Entretanto, escrever uma solução similar para 20, 30 ou 100 valores usando essa estratégia é até factível, porém nada prática.</p>
 <p>Uma estrutura de organização alternativa para esse problema poderia ser como a apresentada no <a href="algoritmos-processamento-basico-de-sequencias-de-dados.html#alg-maximo-de-dez-sequencial">Algoritmo 2.3</a>.</p>
@@ -273,7 +273,7 @@ window.Quarto = {
 <figcaption class="figure-caption">
 <p>Algoritmo 2.3: Determinação do máximo entre dez valores reais (versão 2).</p>
 </figcaption>
-<p><img src="_algxpar/pseudocode.df97ad30acabb8d1585668d6121403b4ba59b1b5.svg" class="img-fluid" alt="Algoritmo 2.3: Determinação do máximo entre dez valores reais (versão 2)." width="648"></p>
+<p><img src="algxpar/pseudocode.df97ad30acabb8d1585668d6121403b4ba59b1b5.svg" class="img-fluid" alt="Algoritmo 2.3: Determinação do máximo entre dez valores reais (versão 2)." width="648"></p>
 </div>
 <p>Para uma quantidade grande de valores, a solução pode ser ampliada apenas pelo acréscimo de novas variáveis <span class="math inline">\(v_i\)</span> e novas verificações. Não é elegante, mas certamente mais prática, e talvez mais clara, que no <a href="algoritmos-processamento-basico-de-sequencias-de-dados.html#alg-maximo-de-dez">Algoritmo 2.2</a>.</p>
 <p>Um ponto interessante do <a href="algoritmos-processamento-basico-de-sequencias-de-dados.html#alg-maximo-de-dez-sequencial">Algoritmo 2.3</a> é que, feita a entrada de uma variável e confrontado seu valor com o máximo, ela não é mais usada. Isso leva a uma nova versão: o <a href="algoritmos-processamento-basico-de-sequencias-de-dados.html#alg-maximo-de-dez-sequencial-reuso-variavel">Algoritmo 2.4</a>, na qual cada nova obtenção de valor reusa a mesma variável, substituindo seu valor por um novo da sequência de entrada.</p>
@@ -281,7 +281,7 @@ window.Quarto = {
 <figcaption class="figure-caption">
 <p>Algoritmo 2.4: Determinação do máximo entre dez valores reais (versão 3).</p>
 </figcaption>
-<p><img src="_algxpar/pseudocode.74511bcdc9e1fff3536985f4ba0918178e39e236.svg" class="img-fluid" alt="Algoritmo 2.4: Determinação do máximo entre dez valores reais (versão 3)." width="648"></p>
+<p><img src="algxpar/pseudocode.74511bcdc9e1fff3536985f4ba0918178e39e236.svg" class="img-fluid" alt="Algoritmo 2.4: Determinação do máximo entre dez valores reais (versão 3)." width="648"></p>
 </div>
 <p>Para essa versão, aumentar a quantidade de itens a serem processados pode ser feita apenas acrescentando-se novas leituras e novas comparações, algo como um “copia-e-colar”. Entretanto, ainda a solução não é minimamente elegante, mesmo sendo mais prática que as anteriores.</p>
 <p>Uma estrutura de repetição é uma ferramenta usada no pseudocódigo para indicar que algumas ações serão executadas várias vezes. Assim, A versão algorítmica final para o problema do máximo entre 10 valores pode ser dada pelo <a href="algoritmos-processamento-basico-de-sequencias-de-dados.html#alg-maximo-de-dez-sequencial-repeticao">Algoritmo 2.5</a>.</p>
@@ -289,7 +289,7 @@ window.Quarto = {
 <figcaption class="figure-caption">
 <p>Algoritmo 2.5: Determinação do máximo entre dez valores reais (versão 4).</p>
 </figcaption>
-<p><img src="_algxpar/pseudocode.32f915e25d367f8d8ec8f23ffda6026cf8838bfc.svg" class="img-fluid" alt="Algoritmo 2.5: Determinação do máximo entre dez valores reais (versão 4)." width="648"></p>
+<p><img src="algxpar/pseudocode.32f915e25d367f8d8ec8f23ffda6026cf8838bfc.svg" class="img-fluid" alt="Algoritmo 2.5: Determinação do máximo entre dez valores reais (versão 4)." width="648"></p>
 </div>
 <p>A alteração desse algoritmo para processar, por exemplo, uma sequência de 1000 valores, requer apenas que a linha que indica “do segundo até o décimo” seja reescrita “do segundo até do milésimo”, contemplando uma solução para um novo problema, que é bem maior que os anteriores.</p>
 </section>
@@ -319,7 +319,7 @@ window.Quarto = {
 <div>
 <figcaption class="figure-caption">
 </figcaption>
-<p><img src="_algxpar/pseudocode.b0cb010d2f6ac9c9055ed26b301c7c4b76e0a7d2.svg" class="img-fluid" alt="" width="648"></p>
+<p><img src="algxpar/pseudocode.b0cb010d2f6ac9c9055ed26b301c7c4b76e0a7d2.svg" class="img-fluid" alt="" width="648"></p>
 </div>
 <p>A lógica que define o fluxo de execução com a estrutura <strong>enquanto</strong> é baseada em uma <em>condição</em>, a qual pode ser avaliada como verdadeira ou falsa. Se a condição for verdadeira, todas as <em>instruções condicionadas</em> da estrutura são executadas uma vez. Ao final da execução, a condição é avaliada novamente e nova execução das ações internas pode ou não ser feita, a depender do resultado.</p>
 <p>Como consequência, a estrutura indica que as <em>instruções condicionadas</em> podem ser executadas uma quantidade indefinida de vezes, que pode ser zero ou mais. É, assim, importante destacar que, sendo a <em>condição</em> falsa já na primeira verificação, nenhuma instrução interna é executada.</p>
@@ -329,7 +329,7 @@ window.Quarto = {
 <figcaption class="figure-caption">
 <p>Algoritmo 2.6: Determinação da quantidade de pessoas com maioridade legal.</p>
 </figcaption>
-<p><img src="_algxpar/pseudocode.9106513b43cc193fed6249926f106f6377d322c1.svg" class="img-fluid" alt="Algoritmo 2.6: Determinação da quantidade de pessoas com maioridade legal." width="648"></p>
+<p><img src="algxpar/pseudocode.9106513b43cc193fed6249926f106f6377d322c1.svg" class="img-fluid" alt="Algoritmo 2.6: Determinação da quantidade de pessoas com maioridade legal." width="648"></p>
 </div>
 <p>O <strong>enquanto</strong> verifica se há dados disponíveis como entrada e, havendo, obtém o dado (uma idade) e, sendo maior ou igual a 18 anos, conta essa ocorrência. Quando não houver mais dados na entrada, a repetição se encerra e a contagem é apresentada. Para o caso da entrada ser vazia, a condição do <strong>enquanto</strong> já é falsa logo no início e, assim, nenhuma leitura é feita, situação em que o contador permanece com valor zero.</p>
 <p>O uso do sentinela de dados também é viável de ter sua lógica organizada como <strong>enquanto</strong>. Um exemplo simples é a soma de uma série de números reais, todos maiores que zero. O sentinela será o número zero, que não faz parte dos dados válidos. Uma solução para esse problema é apresentada no <a href="algoritmos-processamento-basico-de-sequencias-de-dados.html#alg-contador-com-sentinela-enquanto">Algoritmo 2.7</a>.</p>
@@ -337,7 +337,7 @@ window.Quarto = {
 <figcaption class="figure-caption">
 <p>Algoritmo 2.7: Soma de uma sequência de números reais com sentinela.</p>
 </figcaption>
-<p><img src="_algxpar/pseudocode.3ee8531909e41de0cce51466629396983b58b6cd.svg" class="img-fluid" alt="Algoritmo 2.7: Soma de uma sequência de números reais com sentinela." width="648"></p>
+<p><img src="algxpar/pseudocode.3ee8531909e41de0cce51466629396983b58b6cd.svg" class="img-fluid" alt="Algoritmo 2.7: Soma de uma sequência de números reais com sentinela." width="648"></p>
 </div>
 <p>A estratégia é fazer, antes da repetição, uma primeira leitura, que pode ser um valor válido ou o próprio sentinela (quando sequência de números está vazia). Antes de somar esse valor, é feita a comparação com o sentinela. Sendo o valor zero, nenhuma repetição é efetuada e a soma zero é o resultado apresentado. Caso seja um valor válido, ele é somado e, antes de nova verificação, o próximo valor da sequência de entrada é obtido, fechando um ciclo.</p>
 </section>
@@ -347,7 +347,7 @@ window.Quarto = {
 <div>
 <figcaption class="figure-caption">
 </figcaption>
-<p><img src="_algxpar/pseudocode.5c02e978e26a471542950b1f8ca877ffa25316b2.svg" class="img-fluid" alt="" width="648"></p>
+<p><img src="algxpar/pseudocode.5c02e978e26a471542950b1f8ca877ffa25316b2.svg" class="img-fluid" alt="" width="648"></p>
 </div>
 <p>O <strong>repita</strong> é uma estrutura que possui uma <em>condição</em> a ser verifica e sua avaliação é feita depois da execução dos <em>comandos condicionados</em>. Dessa forma, todos os comandos internos são executados e, então, a <em>condição</em> é verificada; resultando em falso, uma nova repetição é feita, sendo verdadeira, repetição se encerra.</p>
 <p>Por sua estrutura, os comandos internos do <strong>repita</strong> são executados pelo menos uma vez.</p>
@@ -357,7 +357,7 @@ window.Quarto = {
 <figcaption class="figure-caption">
 <p>Algoritmo 2.8: Verificação de senha para acesso a um sistema.</p>
 </figcaption>
-<p><img src="_algxpar/pseudocode.036d86ce66991ba4879b1137df151e2bff033ddb.svg" class="img-fluid" alt="Algoritmo 2.8: Verificação de senha para acesso a um sistema." width="648"></p>
+<p><img src="algxpar/pseudocode.036d86ce66991ba4879b1137df151e2bff033ddb.svg" class="img-fluid" alt="Algoritmo 2.8: Verificação de senha para acesso a um sistema." width="648"></p>
 </div>
 <p>Nessa solução, a repetição somente se encerra com a digitação da senha correta, o que pode levar uma eternidade. O algoritmo não detalha como a senha é efetivamente verificada, o que não é, porém, relevante no momento.</p>
 <p>Sequências de dados com valor sentinela também podem ser processadas usando-se a estrutura <strong>repita</strong>. O problema resolvido pelo <a href="algoritmos-processamento-basico-de-sequencias-de-dados.html#alg-contador-com-sentinela-enquanto">Algoritmo 2.7</a>, que usa -enquanto, tem sua versão com <strong>repita</strong> apresentada no <a href="algoritmos-processamento-basico-de-sequencias-de-dados.html#alg-contador-com-sentinela-repita">Algoritmo 2.9</a>.</p>
@@ -365,7 +365,7 @@ window.Quarto = {
 <figcaption class="figure-caption">
 <p>Algoritmo 2.9: Soma de uma sequência de números reais com sentinela (versão 2).</p>
 </figcaption>
-<p><img src="_algxpar/pseudocode.5efa2dad5de66ff607eececd45492eefd0dfed1b.svg" class="img-fluid" alt="Algoritmo 2.9: Soma de uma sequência de números reais com sentinela (versão 2)." width="648"></p>
+<p><img src="algxpar/pseudocode.5efa2dad5de66ff607eececd45492eefd0dfed1b.svg" class="img-fluid" alt="Algoritmo 2.9: Soma de uma sequência de números reais com sentinela (versão 2)." width="648"></p>
 </div>
 <p>Nessa solução, a cada repetição é obtido um valor da entrada e a soma é feita apenas para os valores que não sejam iguais ao sentinela. Quando o valor sentinela é obtido da entrada, ele é ignorado e, em seguida, a repetição se encerra e o resultado final é apresentado. Caso não haja valores para serem somados, o resultado zero é apresentado.</p>
 </section>
@@ -375,31 +375,31 @@ window.Quarto = {
 <div>
 <figcaption class="figure-caption">
 </figcaption>
-<p><img src="_algxpar/pseudocode.f76eff840569b8053e2969e21301525dc7cc2ef6.svg" class="img-fluid" alt="" width="648"></p>
+<p><img src="algxpar/pseudocode.f76eff840569b8053e2969e21301525dc7cc2ef6.svg" class="img-fluid" alt="" width="648"></p>
 </div>
 <p>Há muitas variações comuns para a repetição com <strong>para</strong>. Elas são apresentadas a seguir.</p>
 <p>A versão mais comum para um <strong>para</strong> é com o uso de um iterador (normalmente uma variável genérica <em>i</em> estabelecendo o valor inicial e o final. Seguem exemplos.</p>
 <div>
 <figcaption class="figure-caption">
 </figcaption>
-<p><img src="_algxpar/pseudocode.f989ed0f62927e42c9e2440a559e151ac9b3b45a.svg" class="img-fluid" alt="" width="648"></p>
+<p><img src="algxpar/pseudocode.f989ed0f62927e42c9e2440a559e151ac9b3b45a.svg" class="img-fluid" alt="" width="648"></p>
 </div>
 <div>
 <figcaption class="figure-caption">
 </figcaption>
-<p><img src="_algxpar/pseudocode.cab0fc2bd9e0962438591119d76cb583cbe213de.svg" class="img-fluid" alt="" width="648"></p>
+<p><img src="algxpar/pseudocode.cab0fc2bd9e0962438591119d76cb583cbe213de.svg" class="img-fluid" alt="" width="648"></p>
 </div>
 <div>
 <figcaption class="figure-caption">
 </figcaption>
-<p><img src="_algxpar/pseudocode.17dc9b3f06953aa545e8b2cf0cf6775a2c6c7ce9.svg" class="img-fluid" alt="" width="648"></p>
+<p><img src="algxpar/pseudocode.17dc9b3f06953aa545e8b2cf0cf6775a2c6c7ce9.svg" class="img-fluid" alt="" width="648"></p>
 </div>
 <p>O uso do <strong>for</strong> é considerado sempre crescente<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. Assim, uma repetição de 1 até 1 é feita apenas uma vez e para de 0 até -10 não há nenhuma repetição. Neste livro, portanto, essa é a interpretação consistentemente seguida.</p>
 <p>Como exemplo, a repetição seguinte pode ser considerada.</p>
 <div>
 <figcaption class="figure-caption">
 </figcaption>
-<p><img src="_algxpar/pseudocode.b12d28123ddb0e8652c995c29a7930a9f569c86f.svg" class="img-fluid" alt="" width="648"></p>
+<p><img src="algxpar/pseudocode.b12d28123ddb0e8652c995c29a7930a9f569c86f.svg" class="img-fluid" alt="" width="648"></p>
 </div>
 <p>Nela, se <span class="math inline">\({\Id{final} &gt; \Id{inicial}}\)</span>, a repetição vai de <em>inicial</em> até <em>final</em> de 1 em 1, em um total de <span class="math inline">\({\Id{final} - \Id{inicial} + 1}\)</span> vezes. Caso <em>inicial</em><span class="math inline">\(\,=\,\)</span><em>final</em> as instruções internas são executadas uma única vez. Finalmente, se <span class="math inline">\({\Id{inicial} &gt; \Id{final}}\)</span>, não há nenhuma execução.</p>
 <section id="repetições-regressivas" class="level4">
@@ -409,12 +409,12 @@ window.Quarto = {
 <div>
 <figcaption class="figure-caption">
 </figcaption>
-<p><img src="_algxpar/pseudocode.c73a0fba596cc092fdae9be1784671f8481cf182.svg" class="img-fluid" alt="" width="648"></p>
+<p><img src="algxpar/pseudocode.c73a0fba596cc092fdae9be1784671f8481cf182.svg" class="img-fluid" alt="" width="648"></p>
 </div>
 <div>
 <figcaption class="figure-caption">
 </figcaption>
-<p><img src="_algxpar/pseudocode.ff4e52c08d09b05a84a8e38469060834586ce5e6.svg" class="img-fluid" alt="" width="648"></p>
+<p><img src="algxpar/pseudocode.ff4e52c08d09b05a84a8e38469060834586ce5e6.svg" class="img-fluid" alt="" width="648"></p>
 </div>
 </section>
 <section id="repetições-com-passo-diferente-de-1" class="level4">
@@ -424,18 +424,18 @@ window.Quarto = {
 <div>
 <figcaption class="figure-caption">
 </figcaption>
-<p><img src="_algxpar/pseudocode.392342dd4dd0a7763701ca409bc0f375589be0c7.svg" class="img-fluid" alt="" width="648"></p>
+<p><img src="algxpar/pseudocode.392342dd4dd0a7763701ca409bc0f375589be0c7.svg" class="img-fluid" alt="" width="648"></p>
 </div>
 <div>
 <figcaption class="figure-caption">
 </figcaption>
-<p><img src="_algxpar/pseudocode.cd4d62a358f5665f216b113db0a287698c5b9ef5.svg" class="img-fluid" alt="" width="648"></p>
+<p><img src="algxpar/pseudocode.cd4d62a358f5665f216b113db0a287698c5b9ef5.svg" class="img-fluid" alt="" width="648"></p>
 </div>
 <p>Embora incomuns<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>, repetições com <strong>para</strong> que usem valores reais também podem ser usadas</p>
 <div>
 <figcaption class="figure-caption">
 </figcaption>
-<p><img src="_algxpar/pseudocode.0b56086b4c4566e996a7345ed79562f128c2fad4.svg" class="img-fluid" alt="" width="648"></p>
+<p><img src="algxpar/pseudocode.0b56086b4c4566e996a7345ed79562f128c2fad4.svg" class="img-fluid" alt="" width="648"></p>
 </div>
 
 
