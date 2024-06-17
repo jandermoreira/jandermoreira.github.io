@@ -459,12 +459,12 @@ window.Quarto = {
 </header>
 
 
-<p>Este capítulo estende os conceitos de escopo de validade das declarações na linguagem C. A <a href="#sec-declaracoes-e-validade" class="quarto-xref"><span class="quarto-unresolved-ref">sec-declaracoes-e-validade</span></a> abordou as declarações de variáveis internas (locais) a <code>main</code>, enquanto na <a href="#sec-escopo-da-declaracao-de-funcoes" class="quarto-xref"><span class="quarto-unresolved-ref">sec-escopo-da-declaracao-de-funcoes</span></a>. Esses assuntos são revisitados e integrados.</p>
+<p>Este capítulo estende os conceitos de escopo de validade das declarações na linguagem C. A <a href="c-escopo-basico-de-declaracoes.html#sec-declaracoes-e-validade" class="quarto-xref"><span>Seção 9.1</span></a> abordou as declarações de variáveis internas (locais) a <code>main</code>, enquanto na <a href="c-funcoes.html#sec-escopo-da-declaracao-de-funcoes" class="quarto-xref"><span>Seção 18.2.3</span></a>. Esses assuntos são revisitados e integrados.</p>
 <p>Além de variáveis e funções, há outros elementos em C que podem ser declarados. Esses não serão cobertos diretamente neste texto e, em grande parte, a discussão exposta aqui também se aplica a eles.</p>
 <section id="local-times-global" class="level2" data-number="19.1">
 <h2 data-number="19.1" class="anchored" data-anchor-id="local-times-global"><span class="header-section-number">19.1</span> Local <span class="math inline">\(\times\)</span> global</h2>
 <p>Um código fonte escrito em C contém declarações, sejam de funções ou de variáveis. Esse código fonte está contido em um arquivo texto, usualmente com extensão <code>.c</code>.</p>
-<p>Qualquer função declarada no arquivo tem escopo global, o que quer dizer que sua validade vai desde a linha em que ocorre a declaração até a última linha do arquivo. Em outras palavras, essa função é conhecida e pode ser usada dentro de seu escopo de declaração. Essa regra aplica-se tanto à declaração simples, na forma de protótipo de função, quanto às implementações sem o protótipo (<a href="#sec-escopo-da-declaracao-de-funcoes" class="quarto-xref"><span class="quarto-unresolved-ref">sec-escopo-da-declaracao-de-funcoes</span></a>).</p>
+<p>Qualquer função declarada no arquivo tem escopo global, o que quer dizer que sua validade vai desde a linha em que ocorre a declaração até a última linha do arquivo. Em outras palavras, essa função é conhecida e pode ser usada dentro de seu escopo de declaração. Essa regra aplica-se tanto à declaração simples, na forma de protótipo de função, quanto às implementações sem o protótipo (<a href="c-funcoes.html#sec-escopo-da-declaracao-de-funcoes" class="quarto-xref"><span>Seção 18.2.3</span></a>).</p>
 <p>Outra forma de olhar para essa questão é considerar global qualquer declaração feita fora de uma função.</p>
 <p>Como existe o conceito de “fora de uma função”, também há o de “dentro de uma função”. Assim, variáveis declaradas no corpo da implementação de uma função estão dentro da função e são chamadas de declarações locais. O termo se aplica também aos parâmetros formais da função.</p>
 <section id="validade-das-declarações-globais-e-locais" class="level3" data-number="19.1.1">
@@ -475,7 +475,7 @@ window.Quarto = {
 <figcaption class="figure-caption">
 <p>Algoritmo 19.1: Leitura e apresentação de números racionais.</p>
 </figcaption>
-<p><img src="_algxpar/pseudocode.2276a1e15447f05d17b7ecd3d3670ad6804b2ec6.svg" class="img-fluid" alt="Algoritmo 19.1: Leitura e apresentação de números racionais." width="648"></p>
+<p><img src="algxpar/pseudocode.2276a1e15447f05d17b7ecd3d3670ad6804b2ec6.svg" class="img-fluid" alt="Algoritmo 19.1: Leitura e apresentação de números racionais." width="648"></p>
 </div>
 <p>A codificação em C é apresentada na sequência.</p>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource c number-lines code-with-copy"><code class="sourceCode c"><span id="cb1-1"><a href="#cb1-1"></a><span class="co">/*</span></span>
@@ -552,7 +552,7 @@ window.Quarto = {
 <span id="cb1-72"><a href="#cb1-72"></a><span class="op">}</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="sourceCode" id="cb2"><pre class="sourceCode terminal cell-output code-with-copy"><code class="sourceCode terminal"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>Digite um número racional a/b (a e b inteiros e b não nulo): <span class="kw">-3553/-627</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>O racional digitado foi: 17/3.</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Para esse programa, há declarações tanto de variáveis quanto de funções. A <a href="#tbl-validade-declaracoes-racionais" class="quarto-xref">Tabela&nbsp;<span class="quarto-unresolved-ref">tbl-validade-declaracoes-racionais</span></a> apresenta as declarações de interesse no programa e destaca o escopo e validade (linhas do código) de cada uma.</p>
+<p>Para esse programa, há declarações tanto de variáveis quanto de funções. A <a href="#tbl-validade-declaracoes-racionais" class="quarto-xref">Tabela&nbsp;<span>19.1</span></a> apresenta as declarações de interesse no programa e destaca o escopo e validade (linhas do código) de cada uma.</p>
 <div id="tbl-validade-declaracoes-racionais" class="quarto-float anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-validade-declaracoes-racionais-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -722,7 +722,7 @@ Curiosidade
 <li>Declarações globais valem em todo o código fonte a partir de sua declaração;</li>
 <li>Parâmetros e declarações em funções são locais, têm apenas validade no escopo da função e são independentes de qualquer outra declaração com mesmo nome em escopo maior;</li>
 <li>Declarações locais podem se sobrepor e ocultar declarações globais;</li>
-<li>Blocos de comandos podem ter declarações cujo escopo é o próprio bloco apenas (<a href="#sec-declaracoes-e-validade" class="quarto-xref"><span class="quarto-unresolved-ref">sec-declaracoes-e-validade</span></a>).</li>
+<li>Blocos de comandos podem ter declarações cujo escopo é o próprio bloco apenas (<a href="c-escopo-basico-de-declaracoes.html#sec-declaracoes-e-validade" class="quarto-xref"><span>Seção 9.1</span></a>).</li>
 </ul>
 </section>
 <section id="variáveis-globais" class="level2" data-number="19.3">

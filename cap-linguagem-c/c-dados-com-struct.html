@@ -479,14 +479,14 @@ window.Quarto = {
 <figcaption class="figure-caption">
 <p>Algoritmo 23.1: Cálculo da área de um triângulo no espaço <span class="math inline">\(\mathbb{R}^3\)</span>.</p>
 </figcaption>
-<p><img src="_algxpar/pseudocode.3162023885d056e92d35c8340e2e60ea18d578ef.svg" class="img-fluid" alt="Algoritmo 23.1: Cálculo da área de um triângulo no espaço \mathbb{R}^3." width="648"></p>
+<p><img src="algxpar/pseudocode.3162023885d056e92d35c8340e2e60ea18d578ef.svg" class="img-fluid" alt="Algoritmo 23.1: Cálculo da área de um triângulo no espaço \mathbb{R}^3." width="648"></p>
 </div>
 <p>A função <span class="smallcaps">ÁreaTriângulo</span> está apresentada no <a href="c-dados-com-struct.html#alg-funcao-area-triangulo-espaco">Algoritmo 23.2</a>, assim como uma função <span class="smallcaps">DistânciaPontos</span> necessária à sua execução.</p>
 <div id="alg-funcao-area-triangulo-espaco">
 <figcaption class="figure-caption">
 <p>Algoritmo 23.2: Função para cálculo da área de um triângulo dados seus vértices.</p>
 </figcaption>
-<p><img src="_algxpar/pseudocode.c1a40739cbb60ef42a1e2bedc68eb8cf1951e7f6.svg" class="img-fluid" alt="Algoritmo 23.2: Função para cálculo da área de um triângulo dados seus vértices." width="648"></p>
+<p><img src="algxpar/pseudocode.c1a40739cbb60ef42a1e2bedc68eb8cf1951e7f6.svg" class="img-fluid" alt="Algoritmo 23.2: Função para cálculo da área de um triângulo dados seus vértices." width="648"></p>
 </div>
 <p>Com base nessas especificações, é possível escrever um programa em C para implementar essa solução.</p>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode c code-with-copy"><code class="sourceCode c"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">/*</span></span>
@@ -972,7 +972,7 @@ window.Quarto = {
 <section id="sec-declaracoes-struct-iguais" class="level3" data-number="23.4.2">
 <h3 data-number="23.4.2" class="anchored" data-anchor-id="sec-declaracoes-struct-iguais"><span class="header-section-number">23.4.2</span> Declarações “iguais”</h3>
 <p>Em C, ao se encontrar a definição do registro como um tipo, o compilador adiciona esse novo <code>struct</code> a uma tabela interna de novos tipos. Se duas definições são idênticas, porém criadas em momentos diferentes, elas não são compatíveis.</p>
-<p>Segue um exemplo no qual duas variáveis são criadas sem especificação do nome do <code>struct</code> (<a href="#sec-declaracao-struct-sem-nome" class="quarto-xref"><span class="quarto-unresolved-ref">sec-declaracao-struct-sem-nome</span></a>) para, em seguida, ser declarada uma terceira variável com <code>struct</code> idêntico no formato.</p>
+<p>Segue um exemplo no qual duas variáveis são criadas sem especificação do nome do <code>struct</code> (<a href="#sec-declaracao-struct-sem-nome" class="quarto-xref"><span>Seção 23.4.1</span></a>) para, em seguida, ser declarada uma terceira variável com <code>struct</code> idêntico no formato.</p>
 <div class="sourceCode cell-code" id="cb26" data-intentional-problems="true"><pre class="sourceCode c code-with-copy"><code class="sourceCode c"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a><span class="co">/*</span></span>
 <span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a><span class="co"> * Exemplo de struct sem nome</span></span>

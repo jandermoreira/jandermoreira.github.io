@@ -501,7 +501,7 @@ window.Quarto = {
 <span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>27 &lt;= 12? 0.</span>
 <span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>27 &gt;= 12? 1.</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>O resultado de uma operação relacional é um valor inteiro (tipo <code>int</code>, escrito com <code>%d</code>), podendo ser apenas dois valores: 0 se a condição é falsa ou 1, se for verdadeira. Com essa informação é possível interpretar corretamente a saída produzida pelo programa, embora essa saída não seja apropriada para um usuário comum.</p>
-<p>Outro ponto a observar observar são os operadores relacionais em si. Alguns são de fácil compreensão, outros nem tanto. A <a href="#tbl-operadores-relacionais" class="quarto-xref">Tabela&nbsp;<span class="quarto-unresolved-ref">tbl-operadores-relacionais</span></a> apresenta os operadores relacionais da linguagem e seus significados.</p>
+<p>Outro ponto a observar observar são os operadores relacionais em si. Alguns são de fácil compreensão, outros nem tanto. A <a href="#tbl-operadores-relacionais" class="quarto-xref">Tabela&nbsp;<span>6.1</span></a> apresenta os operadores relacionais da linguagem e seus significados.</p>
 <div id="tbl-operadores-relacionais" class="quarto-float anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-operadores-relacionais-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -552,7 +552,7 @@ Tabela&nbsp;6.1: Operadores relacionais da linguagem C.
 <figcaption class="figure-caption">
 <p>Algoritmo 6.1: Determinação de uma dada renda mensal familiar caracteriza o pertencimento à classe A.</p>
 </figcaption>
-<p><img src="_algxpar/pseudocode.099f0973142e54fb83bd0d8b623cdf37dd1e68ba.svg" class="img-fluid" alt="Algoritmo 6.1: Determinação de uma dada renda mensal familiar caracteriza o pertencimento à classe A." width="648"></p>
+<p><img src="algxpar/pseudocode.099f0973142e54fb83bd0d8b623cdf37dd1e68ba.svg" class="img-fluid" alt="Algoritmo 6.1: Determinação de uma dada renda mensal familiar caracteriza o pertencimento à classe A." width="648"></p>
 </div>
 <p>Este algoritmo pode ser implementado em C conforme o código seguinte.</p>
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode c code-with-copy"><code class="sourceCode c"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">/*</span></span>
@@ -663,7 +663,7 @@ Operador condicional ternário
 <p>A combinação com o operador de disjunção <strong>e</strong> somente resulta em verdadeiro quando os dois operandos forem verdadeiros e, caso contrário, em falso. O conceito desse operador pode ser exemplificado por “há isenção de tarifa se o cliente possuir cartão de crédito e o volume de aplicações for superior a R$100.000,00”. Nessa situação, apenas ter o cartão de crédito ou apenas ter aplicações suficientes não dá direito ao desconto. O resultado somente é verdadeiro se ambas as condições forem satisfeitas simultaneamente.</p>
 <p>O <strong>ou</strong> é o operador de conjunção, que resulta em verdadeiro se qualquer um de seus operadores for verdadeiro, sendo falso apenas quando ambos forem falsos. Por exemplo, “a pessoa tem direito a meia entrada no baile se for sócio do clube ou se for estudante”. Este é o caso em que o resultado é falso apenas para os não sócios e os não estudantes.</p>
 <p>O operador <strong>não</strong> é a negação, apenas invertendo o resultado. Não verdadeiro é falso e não falso é verdadeiro. Como exemplo, em “se não estiver chovendo, vou sair”, a situação de chuva é verdadeira, o resultado é falso, o que impede a saída da pessoa.</p>
-<p>Em C, a operação <strong>e</strong> é indicada pelo operador <code>&amp;&amp;</code>, <strong>ou</strong> usa <code>||</code> e <strong>não</strong> é o operador unário <code>!</code>. As combinações possíveis de resultados são apresentadas na <a href="#tbl-tabela-verdade-operadores-logicos" class="quarto-xref">Tabela&nbsp;<span class="quarto-unresolved-ref">tbl-tabela-verdade-operadores-logicos</span></a>, chamada de tabela verdade.</p>
+<p>Em C, a operação <strong>e</strong> é indicada pelo operador <code>&amp;&amp;</code>, <strong>ou</strong> usa <code>||</code> e <strong>não</strong> é o operador unário <code>!</code>. As combinações possíveis de resultados são apresentadas na <a href="#tbl-tabela-verdade-operadores-logicos" class="quarto-xref">Tabela&nbsp;<span>6.2</span></a>, chamada de tabela verdade.</p>
 <div id="tbl-tabela-verdade-operadores-logicos" class="quarto-float anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-tabela-verdade-operadores-logicos-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -819,7 +819,7 @@ Dica
 <figcaption class="figure-caption">
 <p>Algoritmo 6.2: Determinação se um valor é um valor de face de uma cédula brasileira.</p>
 </figcaption>
-<p><img src="_algxpar/pseudocode.ab2b736c8d36e9b4bb69bc97b4d0875a0d5815ab.svg" class="img-fluid" alt="Algoritmo 6.2: Determinação se um valor é um valor de face de uma cédula brasileira." width="648"></p>
+<p><img src="algxpar/pseudocode.ab2b736c8d36e9b4bb69bc97b4d0875a0d5815ab.svg" class="img-fluid" alt="Algoritmo 6.2: Determinação se um valor é um valor de face de uma cédula brasileira." width="648"></p>
 </div>
 <p>O programa seguinte codifica esse algoritmo.</p>
 <div class="sourceCode cell-code" id="cb20"><pre class="sourceCode c code-with-copy"><code class="sourceCode c"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co">/*</span></span>
@@ -860,7 +860,7 @@ Dica
 <figcaption class="figure-caption">
 <p>Algoritmo 6.3: Verificação da aprovação ou reprovação de um aluno em função de notas e frequência.</p>
 </figcaption>
-<p><img src="_algxpar/pseudocode.51af7d0a1fd110e44d9d5cb8b6bf1dd1fd0be6e3.svg" class="img-fluid" alt="Algoritmo 6.3: Verificação da aprovação ou reprovação de um aluno em função de notas e frequência." width="648"></p>
+<p><img src="algxpar/pseudocode.51af7d0a1fd110e44d9d5cb8b6bf1dd1fd0be6e3.svg" class="img-fluid" alt="Algoritmo 6.3: Verificação da aprovação ou reprovação de um aluno em função de notas e frequência." width="648"></p>
 </div>
 <p>A implementação é apresentada na sequência.</p>
 <div class="sourceCode cell-code" id="cb22"><pre class="sourceCode c code-with-copy"><code class="sourceCode c"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co">/*</span></span>
@@ -928,7 +928,7 @@ Dica
 <figcaption class="figure-caption">
 <p>Algoritmo 6.4: Verificação se três segmentos de reta podem ou não formar um triângulo</p>
 </figcaption>
-<p><img src="_algxpar/pseudocode.11da1802d345853d553ea8d4bda4957f4d482337.svg" class="img-fluid" alt="Algoritmo 6.4: Verificação se três segmentos de reta podem ou não formar um triângulo" width="648"></p>
+<p><img src="algxpar/pseudocode.11da1802d345853d553ea8d4bda4957f4d482337.svg" class="img-fluid" alt="Algoritmo 6.4: Verificação se três segmentos de reta podem ou não formar um triângulo" width="648"></p>
 </div>
 <div class="sourceCode cell-code" id="cb25"><pre class="sourceCode c code-with-copy"><code class="sourceCode c"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="co">/*</span></span>
 <span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a><span class="co">Verificação se três segmentos de reta com determinados comprimentos podem</span></span>
@@ -965,7 +965,7 @@ Dica
 <figcaption class="figure-caption">
 <p>Algoritmo 6.5: Determinação se valores inteiros para dia, mês e ano formam uma data válida.</p>
 </figcaption>
-<p><img src="_algxpar/pseudocode.629de1088e55f105533db6b5358b4268dfebf0bb.svg" class="img-fluid" alt="Algoritmo 6.5: Determinação se valores inteiros para dia, mês e ano formam uma data válida." width="648"></p>
+<p><img src="algxpar/pseudocode.629de1088e55f105533db6b5358b4268dfebf0bb.svg" class="img-fluid" alt="Algoritmo 6.5: Determinação se valores inteiros para dia, mês e ano formam uma data válida." width="648"></p>
 </div>
 <div class="sourceCode cell-code" id="cb27"><pre class="sourceCode c code-with-copy"><code class="sourceCode c"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="co">/*</span></span>
 <span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a><span class="co">Determinação se valores inteiros para dia, mês e ano formam uma data</span></span>

@@ -470,7 +470,7 @@ window.Quarto = {
 <p>Um programa em C lida com dados, que podem ser de diferentes tipos, como <code>int</code>, <code>long int</code> ou <code>double</code>, por exemplo. Neste capítulo são apresentados onde os dados são armazenados nos programas (variáveis), seus nomes (identificadores) e como guardar e substituir os valores desses dados (atribuição e leitura).</p>
 <section id="variáveis-declarações-e-atribuição" class="level2" data-number="4.1">
 <h2 data-number="4.1" class="anchored" data-anchor-id="variáveis-declarações-e-atribuição"><span class="header-section-number">4.1</span> Variáveis, declarações e atribuição</h2>
-<p>Conforme abordado na <a href="#sec-representacao-de-dados" class="quarto-xref"><span class="quarto-unresolved-ref">sec-representacao-de-dados</span></a>, qualquer informação precisa ser mapeada para bytes para poder ser utilizada em um sistema computacional.</p>
+<p>Conforme abordado na <a href="c-tipos-de-dados.html#sec-representacao-de-dados" class="quarto-xref"><span>Seção 3.1</span></a>, qualquer informação precisa ser mapeada para bytes para poder ser utilizada em um sistema computacional.</p>
 <p>Para que um programa faça sua tarefa de resolver um dado problema, é preciso que ele tenha acesso à memória e sua representação. Quase na totalidade das linguagens de programação, uma área da memória na qual está guardado um dado é referenciado por um nome arbitrário. Por exemplo, se o ano de um evento é um dado que precisa ser guardado, os bytes reservados para o armazenamento dessa informação é referenciado por um identificador. E dado que o conteúdo da memória possa eventualmente ser modificado, a esse armazenamento é dado o nome de variável, no sentido de mutável.</p>
 <p> Assim, uma variável corresponde a uma área da memória principal e os bytes que a compõe são referenciados por um identificador.</p>
 <p>O programa seguinte exemplifica o uso de duas variáveis para o armazenamento de valores de temperatura.</p>
@@ -508,7 +508,7 @@ window.Quarto = {
 <h2 data-number="4.2" class="anchored" data-anchor-id="identificadores"><span class="header-section-number">4.2</span> Identificadores</h2>
 <p>Nas linguagens de programação, muitos de seus elementos possuem nomes, chamados de identificadores. O nome dado a uma variável é seu identificador; <code>main</code> é o identificador da função por onde o programa em C começa sua execução.</p>
 <p> Um identificador é uma sequência de caracteres usada como nome. Existem palavras reservadas na linguagem, como <code>void</code>, <code>return</code>, <code>int</code> e <code>double</code>, entre outras, que não podem ser usadas como identificadores. Até agora, foram usados nos exemplos identificadores para variáveis (<code>celsius</code>) e funções (<code>printf</code>).</p>
-<p>Um identificador válido na linguagem&nbsp;C é formado exclusivamente por letras, dígitos e pela sublinha (<code>_</code>), nunca se iniciando com um dígito. A <a href="#tbl-identificadores-e-validades" class="quarto-xref">Tabela&nbsp;<span class="quarto-unresolved-ref">tbl-identificadores-e-validades</span></a> apresenta exemplos.</p>
+<p>Um identificador válido na linguagem&nbsp;C é formado exclusivamente por letras, dígitos e pela sublinha (<code>_</code>), nunca se iniciando com um dígito. A <a href="#tbl-identificadores-e-validades" class="quarto-xref">Tabela&nbsp;<span>4.1</span></a> apresenta exemplos.</p>
 <div id="tbl-identificadores-e-validades" class="quarto-layout-panel anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-identificadores-e-validades-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -630,7 +630,7 @@ Dica
 <p>A aderência a um padrão no formato dos identificadores, qualquer que ela seja, é muito importante para códigos claros e compreensíveis. Uma vez escolhido um padrão, este deve ser mantido constante em todo o código.</p>
 </div>
 </div>
-<p>Os estilos usados nos programas implementados neste material estão descritos no <a href="#sec-guia-de-estilo" class="quarto-xref"><span class="quarto-unresolved-ref">sec-guia-de-estilo</span></a>.</p>
+<p>Os estilos usados nos programas implementados neste material estão descritos no <span class="quarto-unresolved-ref">?sec-guia-de-estilo</span>.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -806,7 +806,7 @@ Dica
 <span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="dv">0</span><span class="op">;</span></span>
 <span id="cb17-11"><a href="#cb17-11" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="sourceCode" id="cb18"><pre class="sourceCode terminal cell-output code-with-copy"><code class="sourceCode terminal"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>valor: 6.90819e-310</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb18"><pre class="sourceCode terminal cell-output code-with-copy"><code class="sourceCode terminal"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>valor: 6.93777e-310</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>O valor que é apresentado é efetivamente o conteúdo da variável dado pelos bytes que estão na memória. A saída produzida pelo programa é imprevisível.</p>
 </div>
 </div>
@@ -921,7 +921,7 @@ Dica
 <span id="cb26-17"><a href="#cb26-17" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="sourceCode" id="cb27"><pre class="sourceCode terminal cell-output code-with-copy"><code class="sourceCode terminal"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>Digite seu nome: <span class="kw">Alfonso Cardoso</span></span>
 <span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>Olá, Alfonso Cardoso!</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>O comando <code>nome[strlen(nome) - 1] = '\0'</code> determina a posição do <code>\n</code> usando o comprimento do texto digitado dado por <code>strlen</code> e atribui ali o <code>\0</code>. É importante notar que <code>'\0'</code> é escrito usando aspas simples, pois é um único caractere. Esses aspectos são abordados em mais detalhes no <a href="#sec-dados-textuais" class="quarto-xref"><span class="quarto-unresolved-ref">sec-dados-textuais</span></a>.</p>
+<p>O comando <code>nome[strlen(nome) - 1] = '\0'</code> determina a posição do <code>\n</code> usando o comprimento do texto digitado dado por <code>strlen</code> e atribui ali o <code>\0</code>. É importante notar que <code>'\0'</code> é escrito usando aspas simples, pois é um único caractere. Esses aspectos são abordados em mais detalhes no <a href="c-dados-textuais.html" class="quarto-xref"><span>Capítulo 16</span></a>.</p>
 </section>
 <section id="leitura-de-valores-numéricos" class="level3" data-number="4.5.2">
 <h3 data-number="4.5.2" class="anchored" data-anchor-id="leitura-de-valores-numéricos"><span class="header-section-number">4.5.2</span> Leitura de valores numéricos</h3>
@@ -932,7 +932,7 @@ Dica
 <figcaption class="figure-caption">
 <p>Algoritmo 4.1: Determinação do ano atual baseado na idade e no ano de nascimento de uma pessoa.</p>
 </figcaption>
-<p><img src="_algxpar/pseudocode.93b8def5992ade10d76f8ad4cc8f230c49bf684c.svg" class="img-fluid" alt="Algoritmo 4.1: Determinação do ano atual baseado na idade e no ano de nascimento de uma pessoa." width="648"></p>
+<p><img src="algxpar/pseudocode.93b8def5992ade10d76f8ad4cc8f230c49bf684c.svg" class="img-fluid" alt="Algoritmo 4.1: Determinação do ano atual baseado na idade e no ano de nascimento de uma pessoa." width="648"></p>
 </div>
 <div class="sourceCode cell-code" id="cb28"><pre class="sourceCode c code-with-copy"><code class="sourceCode c"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co">/*</span></span>
 <span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a><span class="co">Determinação do ano atual com base na idade e do ano de nascimento de uma</span></span>
@@ -1059,7 +1059,7 @@ Dica
 <figcaption class="figure-caption">
 <p>Algoritmo 4.2: Distância de um ponto <span class="math inline">\((x, y)\)</span> à origem</p>
 </figcaption>
-<p><img src="_algxpar/pseudocode.422b2f0807b9faa467f61dffae2e70d2e8384389.svg" class="img-fluid" alt="Algoritmo 4.2: Distância de um ponto (x, y) à origem" width="648"></p>
+<p><img src="algxpar/pseudocode.422b2f0807b9faa467f61dffae2e70d2e8384389.svg" class="img-fluid" alt="Algoritmo 4.2: Distância de um ponto (x, y) à origem" width="648"></p>
 </div>
 <div class="sourceCode cell-code" id="cb37"><pre class="sourceCode c code-with-copy"><code class="sourceCode c"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="co">/*</span></span>
 <span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a><span class="co">Cálculo e apresentação da distância de um ponto em R^2 à origem, tendo como</span></span>
@@ -1133,7 +1133,7 @@ No exemplo acima, na última leitura, é possível que o caractere seja `E` ou `
 </section>
 <section id="um-pouco-mais-sobre-o-sscanf" class="level3" data-number="4.5.5">
 <h3 data-number="4.5.5" class="anchored" data-anchor-id="um-pouco-mais-sobre-o-sscanf"><span class="header-section-number">4.5.5</span> Um pouco mais sobre o <code>sscanf</code></h3>
-<p>O objetivo da função <code>sscanf</code> é analisar uma cadeia de caracteres procurando por padrões, os quais, reconhecidos adequadamente, são convertidos para o tipo indicado e atribuído às variáveis indicadas por seus endereços (razão do operador <code>&amp;</code> usado nos exemplos diversos). Assim, ao se especificar <code>%d%d%lf</code> o <code>sscanf</code> espera encontrar dois inteiros e um real, nesta ordem. Para sumarizar, a <a href="#tbl-formatos-sscanf" class="quarto-xref">Tabela&nbsp;<span class="quarto-unresolved-ref">tbl-formatos-sscanf</span></a> apresenta as principais especificações de formato usadas no <code>sscanf</code>.</p>
+<p>O objetivo da função <code>sscanf</code> é analisar uma cadeia de caracteres procurando por padrões, os quais, reconhecidos adequadamente, são convertidos para o tipo indicado e atribuído às variáveis indicadas por seus endereços (razão do operador <code>&amp;</code> usado nos exemplos diversos). Assim, ao se especificar <code>%d%d%lf</code> o <code>sscanf</code> espera encontrar dois inteiros e um real, nesta ordem. Para sumarizar, a <a href="#tbl-formatos-sscanf" class="quarto-xref">Tabela&nbsp;<span>4.2</span></a> apresenta as principais especificações de formato usadas no <code>sscanf</code>.</p>
 <div id="tbl-formatos-sscanf" class="quarto-float anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-formatos-sscanf-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -1267,7 +1267,7 @@ Tabela&nbsp;4.2: Relação entre formatos e tipos utilizados pelo <code>sscanf</
 <span id="cb46-6"><a href="#cb46-6" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb46-7"><a href="#cb46-7" aria-hidden="true" tabindex="-1"></a>Digite inteiro hexadecimal: <span class="kw">63</span></span>
 <span id="cb46-8"><a href="#cb46-8" aria-hidden="true" tabindex="-1"></a>O valor é 99(10), 143(8) e 63(16).</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Os dígitos 6 e 3 são dígitos válidos nas três bases exemplificadas e 63<sub>10</sub>, 63<sub>8</sub> e 63<sub>16</sub> têm sua interpretação descrita na <a href="#tbl-63-em-bases-diferentes" class="quarto-xref">Tabela&nbsp;<span class="quarto-unresolved-ref">tbl-63-em-bases-diferentes</span></a>. A conversão do valor digitado depende do formato expresso no <code>sscanf</code>: decimal (<code>%d</code>), octal (<code>%o</code>) ou hexadecimal (<code>%x</code>). A escolha de um dos formatos invalida a interpretação dos outros dois.</p>
+<p>Os dígitos 6 e 3 são dígitos válidos nas três bases exemplificadas e 63<sub>10</sub>, 63<sub>8</sub> e 63<sub>16</sub> têm sua interpretação descrita na <a href="#tbl-63-em-bases-diferentes" class="quarto-xref">Tabela&nbsp;<span>4.3</span></a>. A conversão do valor digitado depende do formato expresso no <code>sscanf</code>: decimal (<code>%d</code>), octal (<code>%o</code>) ou hexadecimal (<code>%x</code>). A escolha de um dos formatos invalida a interpretação dos outros dois.</p>
 <div id="tbl-63-em-bases-diferentes" class="quarto-float anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-63-em-bases-diferentes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -1409,7 +1409,7 @@ Tabela&nbsp;4.3: Interpretação dos dígitos 63 nas bases decimal, octal e hexa
 <span id="cb52-2"><a href="#cb52-2" aria-hidden="true" tabindex="-1"></a>i1 = 10; i2 = 20; i3 = 0; i4 = 0.</span>
 <span id="cb52-3"><a href="#cb52-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb52-4"><a href="#cb52-4" aria-hidden="true" tabindex="-1"></a>Na leitura feita, 2 valores foram corretamente lidos.</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Com apenas dois valores corretamente lidos, a execução do programa mostra que os valores originais de <code>i3</code> e <code>i4</code> são preservados. Essas variáveis recaem na categoria variáveis não iniciadas, como exemplificado em uma das dicas da <a href="#sec-mais-sobre-declaracoes-de-variaveis" class="quarto-xref"><span class="quarto-unresolved-ref">sec-mais-sobre-declaracoes-de-variaveis</span></a>.</p>
+<p>Com apenas dois valores corretamente lidos, a execução do programa mostra que os valores originais de <code>i3</code> e <code>i4</code> são preservados. Essas variáveis recaem na categoria variáveis não iniciadas, como exemplificado em uma das dicas da <a href="#sec-mais-sobre-declaracoes-de-variaveis" class="quarto-xref"><span>Seção 4.3</span></a>.</p>
 </section>
 </section>
 </section>
@@ -1424,7 +1424,7 @@ and parse them later with sscanf(3) or more specialized functions  such
 as strtol(3).</code></pre>
 <p>Traduzindo livremente as partes mais relevantes: “é muito difícil usar essas funções corretamente”; “é preferível ler linhas inteiras com <code>fgets</code> (…) e analisá-las com <code>sscanf</code> (…)”. Em outras palavras, o uso de <code>scanf</code> diretamente exige conhecimento mais detalhado de como o fluxo de entrada é tratado e, desta forma, foi substituído por outros comandos, conforme a recomendação do próprio manual.</p>
 <p> O texto também dá como alternativas <code>getline</code> (muito similar a <code>fgets</code>), e <code>strtol</code> (com os mesmos objetivos de <code>sscanf</code>). A função <code>getline</code> tem os mesmos parâmetros de <code>fgets</code> e pode ser usada sem seu lugar, mas tem vantagens quando se usa memória alocada dinamicamente. Por sua vez, <code>strtol</code> é também interessante, mas exige o uso de ponteiros e o entendimento de endereçamento de memória.</p>
-<p>O emprego de <code>getline</code> e <code>strtol</code> em substituição a <code>fgets</code> e <code>sscanf</code> é uma sugestão interessante para quando os conceitos de alocação dinâmica de memória e ponteiros fizerem parte dos conhecimentos do programador. Ponteiros são tratados no <a href="#sec-enderecamento-de-memoria-e-ponteiros" class="quarto-xref"><span class="quarto-unresolved-ref">sec-enderecamento-de-memoria-e-ponteiros</span></a>, enquanto o <a href="#sec-alocacao-dinamica-de-memoria" class="quarto-xref"><span class="quarto-unresolved-ref">sec-alocacao-dinamica-de-memoria</span></a> aborda a alocação dinâmica de memória.</p>
+<p>O emprego de <code>getline</code> e <code>strtol</code> em substituição a <code>fgets</code> e <code>sscanf</code> é uma sugestão interessante para quando os conceitos de alocação dinâmica de memória e ponteiros fizerem parte dos conhecimentos do programador. Ponteiros são tratados no <a href="c-enderecamento-de-memoria-e-ponteiros.html" class="quarto-xref"><span>Capítulo 20</span></a>, enquanto o <span class="quarto-unresolved-ref">?sec-alocacao-dinamica-de-memoria</span> aborda a alocação dinâmica de memória.</p>
 </section>
 <section id="sobre-a-função-gets" class="level2" data-number="4.7">
 <h2 data-number="4.7" class="anchored" data-anchor-id="sobre-a-função-gets"><span class="header-section-number">4.7</span> Sobre a função <code>gets</code></h2>
@@ -1451,7 +1451,7 @@ as strtol(3).</code></pre>
 <span id="cb55-4"><a href="#cb55-4" aria-hidden="true" tabindex="-1"></a>   10 |     gets(entrada);</span>
 <span id="cb55-5"><a href="#cb55-5" aria-hidden="true" tabindex="-1"></a>      |     ^~~~</span>
 <span id="cb55-6"><a href="#cb55-6" aria-hidden="true" tabindex="-1"></a>      |     fgets</span>
-<span id="cb55-7"><a href="#cb55-7" aria-hidden="true" tabindex="-1"></a>/usr/bin/ld: /tmp/cc066EVM.o: na função "main":</span>
+<span id="cb55-7"><a href="#cb55-7" aria-hidden="true" tabindex="-1"></a>/usr/bin/ld: /tmp/ccxiXVLq.o: na função "main":</span>
 <span id="cb55-8"><a href="#cb55-8" aria-hidden="true" tabindex="-1"></a>main.c:(.text+0x2f): aviso: the `gets' function is dangerous and should not </span>
 <span id="cb55-9"><a href="#cb55-9" aria-hidden="true" tabindex="-1"></a>be used.</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="sourceCode" id="cb56"><pre class="sourceCode terminal cell-output code-with-copy"><code class="sourceCode terminal"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a>Digite algo: <span class="kw">C é legal, mas não é simples...</span></span>
@@ -1488,7 +1488,7 @@ as strtol(3).</code></pre>
 <span id="cb59-4"><a href="#cb59-4" aria-hidden="true" tabindex="-1"></a>   12 |     gets(entrada);</span>
 <span id="cb59-5"><a href="#cb59-5" aria-hidden="true" tabindex="-1"></a>      |     ^~~~</span>
 <span id="cb59-6"><a href="#cb59-6" aria-hidden="true" tabindex="-1"></a>      |     fgets</span>
-<span id="cb59-7"><a href="#cb59-7" aria-hidden="true" tabindex="-1"></a>/usr/bin/ld: /tmp/ccPmtenJ.o: na função "main":</span>
+<span id="cb59-7"><a href="#cb59-7" aria-hidden="true" tabindex="-1"></a>/usr/bin/ld: /tmp/cclijS2N.o: na função "main":</span>
 <span id="cb59-8"><a href="#cb59-8" aria-hidden="true" tabindex="-1"></a>main.c:(.text+0x49): aviso: the `gets' function is dangerous and should not </span>
 <span id="cb59-9"><a href="#cb59-9" aria-hidden="true" tabindex="-1"></a>be used.</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="sourceCode" id="cb60"><pre class="sourceCode terminal cell-output code-with-copy"><code class="sourceCode terminal"><span id="cb60-1"><a href="#cb60-1" aria-hidden="true" tabindex="-1"></a>'valor' vale 10</span>
@@ -1503,7 +1503,7 @@ as strtol(3).</code></pre>
 <section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
 <hr>
 <ol>
-<li id="fn1"><p>Mais detalhes sobre valores iniciais de variáveis são apresentados no <a href="#sec-regras-de-escopo-com-modularizacao" class="quarto-xref"><span class="quarto-unresolved-ref">sec-regras-de-escopo-com-modularizacao</span></a>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn1"><p>Mais detalhes sobre valores iniciais de variáveis são apresentados no <a href="c-regras-de-escopo-com-modularizacao.html" class="quarto-xref"><span>Capítulo 19</span></a>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
 

@@ -668,7 +668,7 @@ Dica
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>R 0.0 0.0 5.5 2.0</span>
 <span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>T -1.0 1.0 3.0 4.5 4 -0.5</span>
 <span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>R -1.2 5.2 2.2 3.1</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Neste exemplo, o <code>3</code> indica que há três formas. A primeira é o retângulo <span class="math inline">\(R_1\)</span> da <a href="#fig-retangulos-e-triangulos" class="quarto-xref">Figura&nbsp;<span class="quarto-unresolved-ref">fig-retangulos-e-triangulos</span></a>; segue-se o triângulo <span class="math inline">\(T\)</span> e a última é o retângulo <span class="math inline">\(R_2\)</span>.</p>
+<p>Neste exemplo, o <code>3</code> indica que há três formas. A primeira é o retângulo <span class="math inline">\(R_1\)</span> da <a href="#fig-retangulos-e-triangulos" class="quarto-xref">Figura&nbsp;<span>14.1</span></a>; segue-se o triângulo <span class="math inline">\(T\)</span> e a última é o retângulo <span class="math inline">\(R_2\)</span>.</p>
 <div id="fig-retangulos-e-triangulos" class="quarto-figure quarto-figure-center quarto-float anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-retangulos-e-triangulos-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -684,7 +684,7 @@ Figura&nbsp;14.1: Três formas armazenadas em arquivo segundo seus vértices.
 <figcaption class="figure-caption">
 <p>Algoritmo 14.1: Processamento de formas em arquivo com apresentação das suas áreas, com prefixação do número de formas.</p>
 </figcaption>
-<p><img src="_algxpar/pseudocode.a6bebc962bef3912a46f2990a0cc64e1666b0066.svg" class="img-fluid" alt="Algoritmo 14.1: Processamento de formas em arquivo com apresentação das suas áreas, com prefixação do número de formas." width="648"></p>
+<p><img src="algxpar/pseudocode.a6bebc962bef3912a46f2990a0cc64e1666b0066.svg" class="img-fluid" alt="Algoritmo 14.1: Processamento de formas em arquivo com apresentação das suas áreas, com prefixação do número de formas." width="648"></p>
 </div>
 <p>A implementação desse algoritmo em C pode ser feita conforme o programa seguinte. Nessa codificação, o arquivo lógico é dado pela variável <code>arquivo_formas</code>, associado ao arquivo físico <code>figuras.txt</code>.</p>
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode c code-with-copy"><code class="sourceCode c"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co">/*</span></span>
@@ -764,7 +764,7 @@ Figura&nbsp;14.1: Três formas armazenadas em arquivo segundo seus vértices.
 <h3 data-number="14.4.1" class="anchored" data-anchor-id="a-função-fopen"><span class="header-section-number">14.4.1</span> A função <code>fopen</code></h3>
 <p>A função de associação entre o programa e o arquivo real é a <code>fopen</code>. Ela sempre possui dois parâmetros, sendo o primeiro a indicação do nome do arquivo e o segundo, o modo de abertura.</p>
 <p>O nome do arquivo é uma cadeia de caracteres que pode ser somente o nome do arquivo, como <code>"figuras.txt"</code>, por exemplo. Nesse caso, o arquivo físico é considerado em relação ao diretório corrente. O nome pode indicar também o caminho: <code>"../figuras.txt"</code> indica o arquivo no diretório pai (isto é, um acima do atual) e <code>"/home/user/dados/figuras.txt"</code> dá o caminho absoluto e independe do diretório corrente<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>.</p>
-<p>Em relação aos modos, como <code>"w"</code> ou <code>"r"</code> usados nos exemplos, a <a href="#tbl-modos-arquivo-texto" class="quarto-xref">Tabela&nbsp;<span class="quarto-unresolved-ref">tbl-modos-arquivo-texto</span></a> sumariza como funcionam.</p>
+<p>Em relação aos modos, como <code>"w"</code> ou <code>"r"</code> usados nos exemplos, a <a href="#tbl-modos-arquivo-texto" class="quarto-xref">Tabela&nbsp;<span>14.1</span></a> sumariza como funcionam.</p>
 <div id="tbl-modos-arquivo-texto" class="quarto-float anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-modos-arquivo-texto-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -801,7 +801,7 @@ Tabela&nbsp;14.1: Modos do <code>fopen</code> para manipulação de arquivos tex
 </figure>
 </div>
 <p>Arquivos texto são, via de regra, processados sequencialmente, do início ao fim ou do início até um ponto de interesse qualquer. Raramente são abertos para leitura e escrita, de forma que essa opção foi omitida da lista apresentada.</p>
-<p>A <a href="#tbl-modos-arquivo-texto" class="quarto-xref">Tabela&nbsp;<span class="quarto-unresolved-ref">tbl-modos-arquivo-texto</span></a> também introduz um elemento importante, embora intuitivamente fácil de compreender: a posição corrente. Esse termo é aplicado ao local no arquivo onde as operações de leitura e escrita serão realizadas. Por exemplo, quando um arquivo é aberto em modo <code>"r"</code>, a posição corrente está no início do arquivo, que é o byte zero. A cada leitura, a posição corrente é ajustada para o próximo byte que será lido.</p>
+<p>A <a href="#tbl-modos-arquivo-texto" class="quarto-xref">Tabela&nbsp;<span>14.1</span></a> também introduz um elemento importante, embora intuitivamente fácil de compreender: a posição corrente. Esse termo é aplicado ao local no arquivo onde as operações de leitura e escrita serão realizadas. Por exemplo, quando um arquivo é aberto em modo <code>"r"</code>, a posição corrente está no início do arquivo, que é o byte zero. A cada leitura, a posição corrente é ajustada para o próximo byte que será lido.</p>
 <p>Embora a posição corrente não seja diretamente usada pelo programador no processamento sequencial do arquivo, um exemplo simples de programa ilustra esse conceito.</p>
 <div class="runenv">
 <div class="sourceCode cell-code" id="cb18"><pre class="sourceCode c code-with-copy"><code class="sourceCode c"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co">/*</span></span>
@@ -957,7 +957,7 @@ Curiosidade
 <figcaption class="figure-caption">
 <p>Algoritmo 14.2: Processamento de formas em arquivo com apresentação das suas áreas, com uma forma por linha.</p>
 </figcaption>
-<p><img src="_algxpar/pseudocode.5beab7202b2914f7776514c71f10374d9d9d9ad9.svg" class="img-fluid" alt="Algoritmo 14.2: Processamento de formas em arquivo com apresentação das suas áreas, com uma forma por linha." width="648"></p>
+<p><img src="algxpar/pseudocode.5beab7202b2914f7776514c71f10374d9d9d9ad9.svg" class="img-fluid" alt="Algoritmo 14.2: Processamento de formas em arquivo com apresentação das suas áreas, com uma forma por linha." width="648"></p>
 </div>
 <p>A função <code>fgets</code> opera da mesma forma para um arquivo aberto quanto para <code>stdin</code>, ou seja, os dados do arquivo são lidos para uma variável do programa até que seja encontrado um final de linha (<code>\n</code>). O efeito prático é a leitura de uma linha por vez.</p>
 <p>Quando não há mais dados no arquivo para serem lidos, situação em que o fim do arquivo foi atingido, o valor de retorno de <code>fgets</code> é <code>NULL</code>. Assim, pela verificação do valor de retorno, é possível verificar se se chegou ao fim dos dados.</p>
@@ -1021,7 +1021,7 @@ Curiosidade
 <span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a>1.00</span>
 <span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a>4.00</span>
 <span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a>0.50</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>O arquivo <code>figuras.txt</code> processado por esse programa contém o conteúdo seguinte. Comparativamente ao usado na <a href="#sec-fluxo-de-leitura" class="quarto-xref"><span class="quarto-unresolved-ref">sec-fluxo-de-leitura</span></a>, o formado de descrição de cada forma é o mesmo, sendo que apenas a primeira linha contendo o número de formas não existe.</p>
+<p>O arquivo <code>figuras.txt</code> processado por esse programa contém o conteúdo seguinte. Comparativamente ao usado na <a href="#sec-fluxo-de-leitura" class="quarto-xref"><span>Seção 14.3</span></a>, o formado de descrição de cada forma é o mesmo, sendo que apenas a primeira linha contendo o número de formas não existe.</p>
 <div class="sourceCode" id="cb28" data-from="figuras.txt"><pre class="sourceCode textfile terminal cell-output code-with-copy"><code class="sourceCode terminal"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>R 0.0 0.0 5.5 2.0</span>
 <span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>T -1.0 1.0 3.0 4.5 4 -0.5</span>
 <span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a>R -1.2 5.2 2.2 3.1</span>
@@ -1042,7 +1042,7 @@ Curiosidade
 <figcaption class="figure-caption">
 <p>Algoritmo 14.3: Processamento de arquivo de notas.</p>
 </figcaption>
-<p><img src="_algxpar/pseudocode.2a8db47b0c1e9df7274557e48726e501a17ff338.svg" class="img-fluid" alt="Algoritmo 14.3: Processamento de arquivo de notas." width="648"></p>
+<p><img src="algxpar/pseudocode.2a8db47b0c1e9df7274557e48726e501a17ff338.svg" class="img-fluid" alt="Algoritmo 14.3: Processamento de arquivo de notas." width="648"></p>
 </div>
 <p>Esse problema requer duas passadas pelos valores das notas, uma vez que a contagem dos valores maiores que a média precisa que a média já tenha sido calculada e, para calcular a média, é preciso ter passado por todos as notas. Assim, o arquivo é varrido sequencialmente somando-se as notas e contando quantas são para, em seguida, calcular a média. Em um segundo passo, o arquivo é varrido novamente desde o início, para, então, contar a quantidade de notas maiores que a média.</p>
 <div class="runenv">

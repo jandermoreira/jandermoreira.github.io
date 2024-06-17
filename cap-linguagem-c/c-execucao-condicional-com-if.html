@@ -461,7 +461,7 @@ window.Quarto = {
 <figcaption class="figure-caption">
 <p>Algoritmo 7.1: Apresentação de dois valores reais em ordem não decrescente.</p>
 </figcaption>
-<p><img src="_algxpar/pseudocode.ee59ea57b1bec784908f5937f767dde24b521c01.svg" class="img-fluid" alt="Algoritmo 7.1: Apresentação de dois valores reais em ordem não decrescente." width="648"></p>
+<p><img src="algxpar/pseudocode.ee59ea57b1bec784908f5937f767dde24b521c01.svg" class="img-fluid" alt="Algoritmo 7.1: Apresentação de dois valores reais em ordem não decrescente." width="648"></p>
 </div>
 <p>A codificação em C deste algoritmo pode ser feita como se segue.</p>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode c code-with-copy"><code class="sourceCode c"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">/*</span></span>
@@ -536,7 +536,7 @@ Estrutura <code>if</code> completa
 <figcaption class="figure-caption">
 <p>Algoritmo 7.2: Estimativa do peso ideal conforme sexo biológico e altura.</p>
 </figcaption>
-<p><img src="_algxpar/pseudocode.128199d762608710d961eeb3c40b92cf116786c1.svg" class="img-fluid" alt="Algoritmo 7.2: Estimativa do peso ideal conforme sexo biológico e altura." width="648"></p>
+<p><img src="algxpar/pseudocode.128199d762608710d961eeb3c40b92cf116786c1.svg" class="img-fluid" alt="Algoritmo 7.2: Estimativa do peso ideal conforme sexo biológico e altura." width="648"></p>
 </div>
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode c code-with-copy"><code class="sourceCode c"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">/*</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="co">Cálculo estimado da massa ideal de uma pessoa baseada em seu sexo biológico</span></span>
@@ -574,7 +574,7 @@ Estrutura <code>if</code> completa
 <figcaption class="figure-caption">
 <p>Algoritmo 7.3: Classificação de um triângulo em relação aos comprimentos de seus lados</p>
 </figcaption>
-<p><img src="_algxpar/pseudocode.c9684150a2a2321e8c34bce7dd6c28f498fc6902.svg" class="img-fluid" alt="Algoritmo 7.3: Classificação de um triângulo em relação aos comprimentos de seus lados" width="648"></p>
+<p><img src="algxpar/pseudocode.c9684150a2a2321e8c34bce7dd6c28f498fc6902.svg" class="img-fluid" alt="Algoritmo 7.3: Classificação de um triângulo em relação aos comprimentos de seus lados" width="648"></p>
 </div>
 <p>Em C, a codificação pode ser expressa na forma seguinte.</p>
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode c code-with-copy"><code class="sourceCode c"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span></span>
@@ -606,7 +606,7 @@ Estrutura <code>if</code> completa
 <div class="sourceCode" id="cb8"><pre class="sourceCode terminal cell-output code-with-copy"><code class="sourceCode terminal"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>Digites os comprimentos dos lados de um triângulo: <span class="kw">9.1 4.3 9.1</span></span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>O triângulo é escaleno.</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>O programa usa comandos simples para as atribuições, o que dispensa os comandos compostos com as chaves. Na lógica da solução inicialmente verificada a hipótese dos três lados iguais (equilátero). Caso essa verificação dê falso, então há pelo menos um lado diferente e isso leva ao segundo <code>if</code>, que verifica a hipótese de haver algum par de lados de mesmo comprimento.</p>
-<p>Este programa, além do <code>if</code> e algumas operações lógicas com <strong>e</strong> e <strong>ou</strong>, também usa uma variável <code>classificacao</code> declarada como do tipo <code>char *</code>. Quando são feitas atribuições como as usadas no exemplo a esse tipo de variável, é feita apenas uma referência à constante e não uma atribuição convencional, na qual uma cópia do texto é guardada na variável. A manipulação de cadeias de caracteres em C é, para se bem dizer, chata e difícil. Como ela não é tão natural, acaba exigindo conhecimento de outros elementos da linguagem. O <a href="#sec-dados-textuais" class="quarto-xref"><span class="quarto-unresolved-ref">sec-dados-textuais</span></a> aborda esse tema com mais detalhes.</p>
+<p>Este programa, além do <code>if</code> e algumas operações lógicas com <strong>e</strong> e <strong>ou</strong>, também usa uma variável <code>classificacao</code> declarada como do tipo <code>char *</code>. Quando são feitas atribuições como as usadas no exemplo a esse tipo de variável, é feita apenas uma referência à constante e não uma atribuição convencional, na qual uma cópia do texto é guardada na variável. A manipulação de cadeias de caracteres em C é, para se bem dizer, chata e difícil. Como ela não é tão natural, acaba exigindo conhecimento de outros elementos da linguagem. O <a href="c-dados-textuais.html" class="quarto-xref"><span>Capítulo 16</span></a> aborda esse tema com mais detalhes.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -653,7 +653,7 @@ Dica
 <p>Neste programa, se a diferença for menor que 0,00001 (segundo <code>if</code>), então os valores são considerados iguais. A tolerância, é claro, depende do contexto do problema.</p>
 </div>
 </div>
-<p>Como um último exemplo, segue o algoritmo para o cálculo das raízes reais de uma equação de segundo grau <span class="math inline">\({ax^2 + bx + c = 0}\)</span> dados seus coeficientes (<a href="algoritmos-nocoes.html#alg-pseudocodigo-raizes-equacao">Algoritmo 1.1</a>, apresentado no <a href="#sec-nocoes-de-algoritmos" class="quarto-xref"><span class="quarto-unresolved-ref">sec-nocoes-de-algoritmos</span></a>).</p>
+<p>Como um último exemplo, segue o algoritmo para o cálculo das raízes reais de uma equação de segundo grau <span class="math inline">\({ax^2 + bx + c = 0}\)</span> dados seus coeficientes (<a href="algoritmos-nocoes.html#alg-pseudocodigo-raizes-equacao">Algoritmo 1.1</a>, apresentado no <a href="algoritmos-nocoes.html" class="quarto-xref"><span>Capítulo 1</span></a>).</p>
 <!-- ::: {.content-visible when-profile="programacao"}
 ``` {.pseudocode label="#alg-pseudocodigo-raizes-equacao" title="Pseudocódigo para o cálculo e apresentação das raízes reais de uma equação de segundo grau."}
 \begin{algorithmic}

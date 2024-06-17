@@ -430,7 +430,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Este capítulo apresenta uma visão inicial das constantes textuais da linguagem e como fazer referências a essas constantes.</p>
 <section id="revisitando-as-constantes-textuais" class="level2" data-number="16.1">
 <h2 data-number="16.1" class="anchored" data-anchor-id="revisitando-as-constantes-textuais"><span class="header-section-number">16.1</span> Revisitando as constantes textuais</h2>
-<p>No <a href="#sec-tipos-de-dados" class="quarto-xref"><span class="quarto-unresolved-ref">sec-tipos-de-dados</span></a> foram apresentados os principais tipos de dados da linguagem&nbsp;C, incluindo os dados textuais, mas ainda é preciso complementar as informações sobre os tipos literais.</p>
+<p>No <a href="c-tipos-de-dados.html" class="quarto-xref"><span>Capítulo 3</span></a> foram apresentados os principais tipos de dados da linguagem&nbsp;C, incluindo os dados textuais, mas ainda é preciso complementar as informações sobre os tipos literais.</p>
 <p>A linguagem C apresenta duas notações para especificar valores textuais. A primeira é para caracteres únicos, como uma letra ou um símbolo de pontuação, e é expressa usando aspas simples, como <code>'A'</code> ou <code>'@'</code>, por exemplo.</p>
 <p>O programa seguinte ilustra três escritas usando o formato <code>%c</code> (caractere) para apresentar cada valor.</p>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode c code-with-copy"><code class="sourceCode c"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">/*</span></span>
@@ -573,7 +573,7 @@ Dica
 </div>
 <div class="callout-body-container callout-body">
 <p>Embora haja um prejuízo quanto á clareza, o tipo <code>char</code> pode ser usado como um “pequeno inteiro” de um byte de comprimento. Dessa forma, usando o primeiro bit para indicar o sinal, uma variável desse tipo guardaria valores de -128 a 127. Caso necessário, pode-se usar a declaração de um <code>unsigned char</code> para ter valores de 0 até 255.</p>
-<p>Para se ter programas mais claros, entretanto, mesmo nesse caso é melhor usar os tipos de comprimento fixo definidos em <code>stdint.h</code>. Assim, para se ter um inteiro com sinal de oito bits, o tipo seria <code>int8_t</code>, e poderia ser usado o <code>uint8_t</code> para o mesmo comprimento sem o sinal. O tipo <code>char</code> deve ser deixado de fato apenas para caracteres. O uso de <code>stdint.h</code> é abordado no <a href="#sec-arquivos-binarios" class="quarto-xref"><span class="quarto-unresolved-ref">sec-arquivos-binarios</span></a>.</p>
+<p>Para se ter programas mais claros, entretanto, mesmo nesse caso é melhor usar os tipos de comprimento fixo definidos em <code>stdint.h</code>. Assim, para se ter um inteiro com sinal de oito bits, o tipo seria <code>int8_t</code>, e poderia ser usado o <code>uint8_t</code> para o mesmo comprimento sem o sinal. O tipo <code>char</code> deve ser deixado de fato apenas para caracteres. O uso de <code>stdint.h</code> é abordado no <span class="quarto-unresolved-ref">?sec-arquivos-binarios</span>.</p>
 </div>
 </div>
 <section id="sec-caracteres-acentuados" class="level3" data-number="16.2.1">
@@ -621,7 +621,7 @@ Dica
 </section>
 <section id="sec-ponteiros-para-strings-constantes" class="level2" data-number="16.3">
 <h2 data-number="16.3" class="anchored" data-anchor-id="sec-ponteiros-para-strings-constantes"><span class="header-section-number">16.3</span> Acesso às cadeias de caracteres constantes</h2>
-<p>Nesta seção é apresentada uma visão básica sobre cadeias de caracteres em&nbsp;C, sendo que a manipulação de variáveis com conteúdo textual é coberta pelo <a href="#sec-manipulacao-de-dados-textuais" class="quarto-xref"><span class="quarto-unresolved-ref">sec-manipulacao-de-dados-textuais</span></a>.</p>
+<p>Nesta seção é apresentada uma visão básica sobre cadeias de caracteres em&nbsp;C, sendo que a manipulação de variáveis com conteúdo textual é coberta pelo <a href="c-manipulacao-de-dados-textuais.html" class="quarto-xref"><span>Capítulo 17</span></a>.</p>
 <p>Em programas escritos em C, cadeias de caracteres são indicadas entre aspas duplas e, internamente, é acrescido um byte nulo para indicar seu fim. Quando uma constante literal é parte de um programa, ela é incluída na seção de dados do arquivo executável.</p>
 <div class="runenv">
 <p>Um exemplo trivial dessa inclusão pode ser vista com um código simples, como o seguinte.</p>
@@ -641,7 +641,7 @@ Dica
 <span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>Boa noite.</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Esse programa gera um executável denominado <code>a.out</code>, como observado pelos comandos que seguem.</p>
 <div class="sourceCode cell-code" id="cb20"><pre class="sourceCode terminal code-with-copy"><code class="sourceCode terminal"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>$ <span class="kw">ls -l a.out</span></span>
-<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>-rwxr-xr-x 1 jander jander 16144 jun 17 17:55 a.out</span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>-rwxr-xr-x 1 jander jander 16144 jun 17 19:00 a.out</span>
 <span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>$ <span class="kw">file a.out</span></span>
 <span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>a.out: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically </span>
 <span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a>linked, interpreter /lib64/ld-linux-x86-64.so.2, </span>
@@ -718,7 +718,7 @@ Dica
 <hr>
 <ol>
 <li id="fn1"><p>Unicode Consortium: <a href="https://home.unicode.org" class="uri" target="_blank">https://home.unicode.org</a>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p>Esse tema é tratado em mais detalhes no <a href="#sec-enderecamento-de-memoria-e-ponteiros" class="quarto-xref"><span class="quarto-unresolved-ref">sec-enderecamento-de-memoria-e-ponteiros</span></a>.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Esse tema é tratado em mais detalhes no <a href="c-enderecamento-de-memoria-e-ponteiros.html" class="quarto-xref"><span>Capítulo 20</span></a>.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
 

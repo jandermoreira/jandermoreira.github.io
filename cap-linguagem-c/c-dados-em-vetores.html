@@ -534,7 +534,7 @@ Dica
 <span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>contém lixo)</span>
 <span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>      |            ^~~~~~~~~~~</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="sourceCode" id="cb5"><pre class="sourceCode terminal cell-output code-with-copy"><code class="sourceCode terminal"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>No vetor global: 1000 de 1000 valores zero.</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>No vetor local: 534 de 1000 valores zero.</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>No vetor local: 541 de 1000 valores zero.</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>É interessante observar que o compilador ajuda o programador com uma mensagem sobre a possibilidade de uso de <code>vetor_local</code> com valores não iniciados (o que é, propositalmente, o caso), porém nada é apresentado sobre o vetor global, visto que esse foi, necessariamente, iniciado com zeros.</p>
 <p>A saída produzida pelo programa, que o a quantidade de zeros em cada variável, atesta que todos os valores de <code>vetor_global</code> são zeros, mas o mesmo não é verdade para <code>vetor_local</code>.</p>
 <p>Como sempre, o programador nunca deve usar uma variável sem que um valor tenha sido anteriormente atribuído a ela, mesmo que essa “variável” seja uma posição qualquer em um vetor.</p>
