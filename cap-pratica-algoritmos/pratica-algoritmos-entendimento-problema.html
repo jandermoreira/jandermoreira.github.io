@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Construção de Algoritmos e Programação - 5&nbsp; Problemas variados com repetições e condicionais</title>
+<title>Construção de Algoritmos e Programação - 2&nbsp; Entendimento do problema</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -29,8 +29,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./pratica-algoritmos-problemas-repeticoes-progressoes.html" rel="next">
-<link href="./pratica-algoritmos-problemas-repeticoes-simples.html" rel="prev">
+<link href="./pratica-algoritmos-problemas-simples-introducao.html" rel="next">
+<link href="./algoritmos-nocoes.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -68,35 +68,6 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="book.css">
 </head>
@@ -110,7 +81,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./pratica-algoritmos-proposta-repeticoes-identificacao.html">Repetições</a></li><li class="breadcrumb-item"><a href="./pratica-algoritmos-problemas-repeticoes-variados.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Problemas variados com repetições e condicionais</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./algoritmos-nocoes.html">Algoritmos</a></li><li class="breadcrumb-item"><a href="./pratica-algoritmos-entendimento-problema.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Entendimento do problema</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -162,7 +133,7 @@ window.Quarto = {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
- <span class="menu-text">Condicionais</span></a>
+ <span class="menu-text">Algoritmos</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Alternar seção">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -170,22 +141,22 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./pratica-algoritmos-problemas-condicionais-simples.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Problemas com condicionais</span></span></a>
+  <a href="./algoritmos-nocoes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Noções de algoritmos</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./pratica-algoritmos-respostas-condicionais.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Respostas e comentários para problemas selecionados</span></span></a>
+  <a href="./pratica-algoritmos-entendimento-problema.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Entendimento do problema</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
- <span class="menu-text">Repetições</span></a>
+            <a href="./pratica-algoritmos-problemas-simples-introducao.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Problemas simples e diretos</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Alternar seção">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -193,32 +164,14 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./pratica-algoritmos-proposta-repeticoes-identificacao.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Problemas para identificação do tipo de repetição</span></span></a>
+  <a href="./pratica-algoritmos-problemas-simples.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Problemas simples</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./pratica-algoritmos-problemas-repeticoes-simples.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Problemas com repetições simples</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./pratica-algoritmos-problemas-repeticoes-variados.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Problemas variados com repetições e condicionais</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./pratica-algoritmos-problemas-repeticoes-progressoes.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Problemas com progressões numéricas</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./pratica-algoritmos-respostas-repeticoes.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Respostas e comentários para problemas selecionados</span></span></a>
+  <a href="./pratica-algoritmos-respostas-problemas-simples.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Respostas e comentários para problemas selecionados</span></span></a>
   </div>
 </li>
       </ul>
@@ -226,12 +179,76 @@ window.Quarto = {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
- <span class="menu-text">Apêndices</span></a>
+ <span class="menu-text">Condicionais</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Alternar seção">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./pratica-algoritmos-problemas-condicionais-simples.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Problemas com condicionais</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./pratica-algoritmos-respostas-condicionais.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Respostas e comentários para problemas selecionados</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
+ <span class="menu-text">Repetições</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Alternar seção">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./pratica-algoritmos-proposta-repeticoes-identificacao.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Problemas para identificação do tipo de repetição</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./pratica-algoritmos-problemas-repeticoes-simples.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Problemas com repetições simples</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./pratica-algoritmos-problemas-repeticoes-variados.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Problemas variados com repetições e condicionais</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./pratica-algoritmos-problemas-repeticoes-progressoes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Problemas com progressões numéricas</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./pratica-algoritmos-respostas-repeticoes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Respostas e comentários para problemas selecionados</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true">
+ <span class="menu-text">Apêndices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true" aria-label="Alternar seção">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./pratica-algoritmos-listagem-geral.html" class="sidebar-item-text sidebar-link">
@@ -251,9 +268,9 @@ window.Quarto = {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./pratica-algoritmos-proposta-repeticoes-identificacao.html">Repetições</a></li><li class="breadcrumb-item"><a href="./pratica-algoritmos-problemas-repeticoes-variados.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Problemas variados com repetições e condicionais</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./algoritmos-nocoes.html">Algoritmos</a></li><li class="breadcrumb-item"><a href="./pratica-algoritmos-entendimento-problema.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Entendimento do problema</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span id="sec-problemas-repeticoes-variados" class="quarto-section-identifier"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Problemas variados com repetições e condicionais</span></span></h1>
+<h1 class="title"><span id="sec-entendimento-problema" class="quarto-section-identifier"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Entendimento do problema</span></span></h1>
 </div>
 
 
@@ -270,248 +287,13 @@ window.Quarto = {
 </header>
 
 
-<!-- Contagens de vários intervalos (categorias natação) -->
-<!-- Contagens de vários intervalos (categorias natação) -->
-<div id="exr-0031">
-<div class="callout callout-style-simple no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Problema 5.1 [#0031]
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<div>
-<p>Em uma competição de natação, as categorias são determinadas segundo a idade dos competidores.</p>
-<p>Categorias:</p>
+<p>Um dos pontos principais na elaboração de um algoritmo é que ele resolva um dado problema que foi apresentado. O erro na interpretação da descrição da situação a ser resolvida leva, invariavelmente, à proposição de uma solução equivocada.</p>
+<p>Nesta seção são discutidas os problemas e as interpretações, sejam corretas ou incorretas.</p>
 <ul>
-<li>Infantil A: até 4 anos;</li>
-<li>Infantil B: 5 e 6 anos;</li>
-<li>Infantil C: 7 a 10 anos;</li>
-<li>Juvenil A: 11 a 13 anos;</li>
-<li>Juvenil B: 14 a 17 anos;</li>
-<li>Sênior: 18 ou mais anos.</li>
+<li>Problemas com proposições simples</li>
+<li>Problemas com proposições longas</li>
+<li>Exemplos de problemas com interpretações incorretas</li>
 </ul>
-<p>O número de vagas total para a competição é 200, sem separação entre as categorias. Embora tenha tenham sido preenchidas todas as vagas, houve uma preocupação grande quanto às categorias Infantil A e Sênior, temendo que não houvesse atletas suficientes para elas.</p>
-<p>Escreva um algoritmo completo para processar a idade de todos os participantes e determinar a quantidade de nadadores pertencentes ao Infantil A e Sênior.</p>
-</div>
-</div>
-</div>
-</div>
-<!-- Média de medidas de pressão  -->
-<!-- Média de medidas de pressão  -->
-<div id="exr-0032">
-<div class="callout callout-style-simple no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Problema 5.2 [#0032]
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<div>
-<p>Um sistema monitora a pressão de uma caldeira registrando uma medida a cada cinco minutos. Como o sistema funciona continuamente, os dados são registrados diariamente, com a primeira medida a 0h e a última às 23h55min.</p>
-<p>Escreva um algoritmo para processar todos os dados colhido em um dia e determinar a a pressão média nesse período.</p>
-</div>
-</div>
-</div>
-</div>
-<!-- Porcentagem de cada resposta de uma pesquisa de opinião  -->
-<!-- Porcentagem de cada resposta de uma pesquisa de opinião  -->
-<div id="exr-0033">
-<div class="callout callout-style-simple no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Problema 5.3 [#0033]
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<div>
-<p>É preciso processar o resultado de uma pesquisa de opinião para a qual era possível escolher entre sim, não e não sei.</p>
-<p>Escreva um algoritmo para processar uma sequência de respostas (com mínimo de uma resposta) e determinar as porcentagens de cada categoria.</p>
-<p><strong>Dica:</strong> Represente as comparações usando texto em nível alto de abstração (exemplo: “se a resposta foi sim, então…”).</p>
-</div>
-</div>
-</div>
-</div>
-<!-- Contagem e porcentagem em relatório de gastos  -->
-<!-- Contagem e porcentagem em relatório de gastos  -->
-<div id="exr-0034">
-<div class="callout callout-style-simple no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Problema 5.4 [#0034]
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<div>
-<p>Um relatório de gastos é apresentado mensalmente ao gerente de uma empresa. Nesse relatório constam, logo no início, a quantidade de despesas individuais e, seguindo a essa informação, vêm os valores em R$ de cada gasto realizado. Deseja-se saber quantos desses valores são superiores a R$1000,00.</p>
-<p>Escreva um algoritmo para processar os dados descritos e apresentar a quantidade desejada e a porcentagem desta em relação ao número total de gastos realizados.</p>
-</div>
-</div>
-</div>
-</div>
-<!-- Porcentagens e médias na população  -->
-<!-- Porcentagens e médias na população  -->
-<div id="exr-0035">
-<div class="callout callout-style-simple no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Problema 5.5 [#0035]
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<div>
-<p>A Universidade promoveu um um show de música folclórica em seu Anfiteatro principal, o qual tem capacidade para 400&nbsp;pessoas. Os ingressos foram grátis e distribuídos com antecedência. Na noite do espetáculo, todos os assentos foram ocupados.</p>
-<p>Para colher informações sobre o público participante, foi perguntado a cada ingressante sua identidade de gênero e sua idade. Os gêneros foram anotados da seguinte forma: 1 - cisgênero; 2 - transgênero e 3 - não binário.</p>
-<p>Os dados de interesse para a análise incluem:</p>
-<ul>
-<li>as porcentagens de cada grupo em relação ao total;</li>
-<li>as idades médias de cada grupo.</li>
-</ul>
-<p>Escreva um algoritmo para processar uma sequência de informações que consiste, para cada um dos presentes no show, no número referente ao seu grupo e sua idade. O pseudocódigo deve apresentar as porcentagens indicadas e as médias que existirem.</p>
-<p><a href="pratica-algoritmos-respostas-repeticoes.html#rem-0035" class="quarto-xref"><img src="icones/comentario.png" height="20"> Comentário&nbsp;<span>7.2</span></a></p>
-</div>
-</div>
-</div>
-</div>
-<!-- Soma dos divisores  -->
-<!-- Soma dos divisores -->
-<div id="exr-0036">
-<div class="callout callout-style-simple no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Problema 5.6 [#0036]
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<div>
-<p>Escreva um algoritmo para, a partir de um valor em <span class="math inline">\(\mathbb{Z}^*\)</span>, apresentar todos seus divisores e a soma destes divisores.</p>
-<p><a href="pratica-algoritmos-respostas-repeticoes.html#sol-0036" class="quarto-xref"><img src="icones/resposta.png" height="20"> Resposta&nbsp;<span>7.14</span></a></p>
-<p><a href="pratica-algoritmos-respostas-repeticoes.html#rem-0036" class="quarto-xref"><img src="icones/comentario.png" height="20"> Comentário&nbsp;<span>7.3</span></a></p>
-</div>
-</div>
-</div>
-</div>
-<!-- Erro em determinação do maior (inteiros positivos)  -->
-<!-- Soma dos divisores -->
-<div id="exr-0037">
-<div class="callout callout-style-simple no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Problema 5.7 [#0037]
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<div>
-<p>Considere o seguinte problema:</p>
-<blockquote class="blockquote">
-<p>Escreva um algoritmo para processar uma sequência indefinida e não vazia de valores inteiros (todos positivos) e determinar o valor máximo. A sequência é terminada por um valor sentinela igual a -1.</p>
-</blockquote>
-<p>Para esse problema, foi apresentado o seguinte algoritmo:</p>
-<div>
-<figcaption class="figure-caption">
-</figcaption>
-<p><img src="algxpar/pseudocode.7e7ff7921c68c5bdcceda7a4a52b6195574575b4.svg" class="img-fluid" alt="" width="648"></p>
-</div>
-<p>Essa solução, porém, contém um erro de lógica. Identifique-o e proponha a correção.</p>
-<p><a href="pratica-algoritmos-respostas-repeticoes.html#rem-0037" class="quarto-xref"><img src="icones/comentario.png" height="20"> Comentário&nbsp;<span>7.4</span></a></p>
-</div>
-</div>
-</div>
-</div>
-<!-- Crescimento simultâneo de aplicações -->
-<!-- Crescimento simultâneo de aplicações -->
-<div id="exr-0038">
-<div class="callout callout-style-simple no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Problema 5.8 [#0038]
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<div>
-<p>Adson Biardeyson da Gama e Rafaela Xiomara Corocher são investidores.</p>
-<p>Adson tem uma aplicação com valor atual de R$12.000,00. Essa aplicação rende 1,2% de juros ao mês.</p>
-<p>Rafaela, por sua vez, tem uma aplicação de R$11.500,00, cujo rendimento mensal é de 1,9%.</p>
-<p>Escreva um algoritmo que apresente a evolução simultânea dos saldos de ambas as aplicações mês a mês (incluindo o mês inicial), até que a aplicação de Rafaela supere a de Adson. O número de meses decorridos até esta situação deve também ser apresentado.</p>
-<p>Para referência, o algoritmo deveria produzir um resultado como o seguinte:</p>
-<pre><code>    12000.00 11500.00
-    12144.00 11718.50
-    12289.73 11941.15
-    12437.20 12168.03
-    12586.45 12399.23
-    12737.49 12634.81
-    12890.34 12874.87
-    13045.02 13119.50
-    7 meses</code></pre>
-</div>
-</div>
-</div>
-</div>
-<!-- Crescimento simultâneo de aplicações 2-->
-<!-- Crescimento simultâneo de aplicações 2 -->
-<div id="exr-0039">
-<div class="callout callout-style-simple no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Problema 5.9 [#0039]
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<div>
-<p>Zana Geraldo e Otto de Mattos Oliveira são investidores e há um interesse no progresso de aplicações de cada um deles.</p>
-<p>Escreva um algoritmo que, a partir dos saldos atuais das duas aplicações e as respectivas taxas de juros mensais, apresente a evolução simultânea dos saldos de ambas as aplicações mês a mês (incluindo o mês inicial), até que a aplicação de Otto supere a de Zana ou até que tenham transcorridos 12&nbsp;meses. O número de meses decorridos deve ser apresentado no final.</p>
-</div>
-</div>
-</div>
-</div>
-<!-- Máximo e contagem simultâneas (idades) -->
-<!-- Máximo e contagem simultâneas (idades) -->
-<div id="exr-0042">
-<div class="callout callout-style-simple no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Problema 5.10 [#0042]
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<div>
-<p>Existe um grupo de voluntários para um estudo clínico, perfazendo 30&nbsp;pessoas. Para cada uma delas foram coletadas diversas informações, entre elas a idade.</p>
-<p>Escreva um algoritmo que, a partir da sequência das 30&nbsp;idades, apresente a idade máxima e a quantidade de pessoas que possuem esta idade.</p>
-<p><a href="pratica-algoritmos-respostas-repeticoes.html#sol-0042" class="quarto-xref"><img src="icones/resposta.png" height="20"> Resposta&nbsp;<span>7.15</span></a></p>
-</div>
-</div>
-</div>
-</div>
 
 
 
@@ -900,13 +682,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./pratica-algoritmos-problemas-repeticoes-simples.html" class="pagination-link  aria-label=" &lt;span="" com="" repetições="" simples&lt;="" span&gt;"="">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Problemas com repetições simples</span></span>
+      <a href="./algoritmos-nocoes.html" class="pagination-link  aria-label=" &lt;span="" de="" algoritmos&lt;="" span&gt;"="">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Noções de algoritmos</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./pratica-algoritmos-problemas-repeticoes-progressoes.html" class="pagination-link" aria-label="<span class='chapter-number'>6</span>&nbsp; <span class='chapter-title'>Problemas com progressões numéricas</span>">
-        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Problemas com progressões numéricas</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./pratica-algoritmos-problemas-simples-introducao.html" class="pagination-link" aria-label="Problemas simples e diretos">
+        <span class="nav-page-text">Problemas simples e diretos</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
