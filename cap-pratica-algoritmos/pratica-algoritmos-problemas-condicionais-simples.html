@@ -246,8 +246,14 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./pratica-algoritmos-problemas-gerais-modularizacao.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Problemas gerais envolvendo modularização</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./pratica-algoritmos-respostas-modularizacao.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Respostas e comentários para problemas selecionados</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Respostas e comentários para problemas selecionados</span></span></a>
   </div>
 </li>
       </ul>
@@ -546,6 +552,107 @@ Problema 1.9 [#0009]
 <div>
 <p>Em alguns processos químicos determinadas medidas são colhidas três vezes, pois podem variar consideravelmente em um curto espaço de tempo. Para cada coleta, é escolhida como medida para registro a de valor intermediário, sendo descartadas a mais baixa e a mais alta. Quando há medidas iguais, é irrelevante qual é escolhida.</p>
 <p>Escreva um algoritmo completo para, a partir de três valores reais, apresentar o valor intermediário.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Conversão de conceito para nota -->
+<!-- Conversão de conceito para nota -->
+<div id="exr-0054">
+<div class="callout callout-style-simple no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Problema 1.10 [#0054]
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<div>
+<!-- Descrição de situação problema -->
+<!-- Conversões de notas e conceitos -->
+<p>Uma instituição de ensino faz o controle de desempenho dos alunos usando conceitos, como A, B, C etc. no lugar nas notas numéricas.</p>
+<p>Para que cálculos de médias possam ser feitos usando os conceitos, eles precisam ser convertidos para valores numéricos e o resultado convertido para conceito novamente.</p>
+<p>Em particular, a instituição possui a seguinte associação entre conceitos e notas:</p>
+<div class="columns">
+<div class="column" style="width:60%;">
+<table class="table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Conceito</th>
+<th style="text-align: center;">Valor numérico</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">10,0</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">8,5</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">6,5</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">D</td>
+<td style="text-align: center;">5,5</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">E</td>
+<td style="text-align: center;">3,0</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">0,0</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>A conversão de nota numérica para conceito obedece à seguinte associação</p>
+<div class="columns">
+<div class="column" style="width:60%;">
+<table class="table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Intervalo</th>
+<th style="text-align: center;">Conceito</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(n &gt; 9\)</span></td>
+<td style="text-align: center;">A</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(8{,}0 &lt; n \leq 9{,}0\)</span></td>
+<td style="text-align: center;">B</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(6{,}0 &lt; n \leq 8{,}0\)</span></td>
+<td style="text-align: center;">C</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(4{,}0 &lt; n \leq 6{,}0\)</span></td>
+<td style="text-align: center;">D</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(0{,}0 &lt; n \leq 4{,}0\)</span></td>
+<td style="text-align: center;">E</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(n = 0{,}0\)</span></td>
+<td style="text-align: center;">F</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>Escreva um algoritmo para, neste contexto, apresentar o valor numérico de um conceito dado como entrada.</p>
 </div>
 </div>
 </div>

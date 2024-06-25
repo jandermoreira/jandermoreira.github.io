@@ -29,7 +29,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./pratica-algoritmos-respostas-modularizacao.html" rel="next">
+<link href="./pratica-algoritmos-problemas-gerais-modularizacao.html" rel="next">
 <link href="./pratica-algoritmos-proposta-funcoes-simples.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -68,6 +68,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="book.css">
 </head>
@@ -217,8 +246,14 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./pratica-algoritmos-problemas-gerais-modularizacao.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Problemas gerais envolvendo modularização</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./pratica-algoritmos-respostas-modularizacao.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Respostas e comentários para problemas selecionados</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Respostas e comentários para problemas selecionados</span></span></a>
   </div>
 </li>
       </ul>
@@ -270,6 +305,134 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<!-- Projeto função: combinação de n, p a p -->
+<!-- Projeto função: combinação de n, p a p -->
+<div id="exr-0050">
+<div class="callout callout-style-simple no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Problema 9.1 [#0050]
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<div>
+<p>O número de combinações de <span class="math inline">\(n\)</span> elementos em grupos contendo <span class="math inline">\(p\)</span> elementos cada um é expresso</p>
+<p><span class="math display">\[ C_p^n = \dfrac{n!}{p!(n-p)!}. \]</span></p>
+<p>Considerando um algoritmo capaz apenas de realizar as operações básicas (somas e multiplicações), identifique quais módulos, na forma de funções, poderiam ser empregados para a realização dos cálculos da combinação.</p>
+<p><a href="pratica-algoritmos-respostas-modularizacao.html#sol-0050" class="quarto-xref"><img src="icones/resposta.png" height="20"> Resposta&nbsp;<span>11.5</span></a></p>
+</div>
+</div>
+</div>
+</div>
+<!-- Projeto função: conversões notas x conceitos -->
+<!-- Projeto função: conversões notas x conceitos -->
+<div id="exr-0052">
+<div class="callout callout-style-simple no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Problema 9.2 [#0052]
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<div>
+<!-- Descrição de situação problema -->
+<!-- Conversões de notas e conceitos -->
+<p>Uma instituição de ensino faz o controle de desempenho dos alunos usando conceitos, como A, B, C etc. no lugar nas notas numéricas.</p>
+<p>Para que cálculos de médias possam ser feitos usando os conceitos, eles precisam ser convertidos para valores numéricos e o resultado convertido para conceito novamente.</p>
+<p>Em particular, a instituição possui a seguinte associação entre conceitos e notas:</p>
+<div class="columns">
+<div class="column" style="width:60%;">
+<table class="table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Conceito</th>
+<th style="text-align: center;">Valor numérico</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">10,0</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">8,5</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">6,5</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">D</td>
+<td style="text-align: center;">5,5</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">E</td>
+<td style="text-align: center;">3,0</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">0,0</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>A conversão de nota numérica para conceito obedece à seguinte associação</p>
+<div class="columns">
+<div class="column" style="width:60%;">
+<table class="table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Intervalo</th>
+<th style="text-align: center;">Conceito</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(n &gt; 9\)</span></td>
+<td style="text-align: center;">A</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(8{,}0 &lt; n \leq 9{,}0\)</span></td>
+<td style="text-align: center;">B</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(6{,}0 &lt; n \leq 8{,}0\)</span></td>
+<td style="text-align: center;">C</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(4{,}0 &lt; n \leq 6{,}0\)</span></td>
+<td style="text-align: center;">D</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(0{,}0 &lt; n \leq 4{,}0\)</span></td>
+<td style="text-align: center;">E</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(n = 0{,}0\)</span></td>
+<td style="text-align: center;">F</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>Considere o seguinte problema:</p>
+<blockquote class="blockquote">
+<p>Na instituição descrita, é preciso calcular a média de três conceitos de um dado aluno, apresentando o conceito final resultante. Escreva um algoritmo para resolver esse problema.</p>
+</blockquote>
+<p>Com base nessas informações, identifique as potenciais funções que poderiam fazer parte de sua solução.</p>
+<p><a href="pratica-algoritmos-respostas-modularizacao.html#sol-0052" class="quarto-xref"><img src="icones/resposta.png" height="20"> Resposta&nbsp;<span>11.6</span></a></p>
+</div>
+</div>
+</div>
+</div>
 
 
 
@@ -663,8 +826,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./pratica-algoritmos-respostas-modularizacao.html" class="pagination-link" aria-label="<span class='chapter-number'>10</span>&nbsp; <span class='chapter-title'>Respostas e comentários para problemas selecionados</span>">
-        <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Respostas e comentários para problemas selecionados</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./pratica-algoritmos-problemas-gerais-modularizacao.html" class="pagination-link" aria-label="<span class='chapter-number'>10</span>&nbsp; <span class='chapter-title'>Problemas gerais envolvendo modularização</span>">
+        <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Problemas gerais envolvendo modularização</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
