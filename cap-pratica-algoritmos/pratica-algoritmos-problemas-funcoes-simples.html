@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Construção de Algoritmos e Programação - 10&nbsp; Problemas gerais envolvendo modularização</title>
+<title>Construção de Algoritmos e Programação - 8&nbsp; Problemas com funções simples</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -29,8 +29,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./pratica-algoritmos-problemas-procedimentos-simples.html" rel="next">
-<link href="./pratica-algoritmos-problemas-funcoes-projeto.html" rel="prev">
+<link href="./pratica-algoritmos-problemas-funcoes-projeto.html" rel="next">
+<link href="./pratica-algoritmos-respostas-repeticoes.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -110,7 +110,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./pratica-algoritmos-problemas-funcoes-simples.html">Modularização</a></li><li class="breadcrumb-item"><a href="./pratica-algoritmos-problemas-gerais-modularizacao.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Problemas gerais envolvendo modularização</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./pratica-algoritmos-problemas-funcoes-simples.html">Modularização</a></li><li class="breadcrumb-item"><a href="./pratica-algoritmos-problemas-funcoes-simples.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Problemas com funções simples</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -234,7 +234,7 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./pratica-algoritmos-problemas-funcoes-simples.html" class="sidebar-item-text sidebar-link">
+  <a href="./pratica-algoritmos-problemas-funcoes-simples.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Problemas com funções simples</span></span></a>
   </div>
 </li>
@@ -246,7 +246,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./pratica-algoritmos-problemas-gerais-modularizacao.html" class="sidebar-item-text sidebar-link active">
+  <a href="./pratica-algoritmos-problemas-gerais-modularizacao.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Problemas gerais envolvendo modularização</span></span></a>
   </div>
 </li>
@@ -321,9 +321,9 @@ window.Quarto = {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./pratica-algoritmos-problemas-funcoes-simples.html">Modularização</a></li><li class="breadcrumb-item"><a href="./pratica-algoritmos-problemas-gerais-modularizacao.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Problemas gerais envolvendo modularização</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./pratica-algoritmos-problemas-funcoes-simples.html">Modularização</a></li><li class="breadcrumb-item"><a href="./pratica-algoritmos-problemas-funcoes-simples.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Problemas com funções simples</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span id="sec-problemas-modularizacao" class="quarto-section-identifier"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Problemas gerais envolvendo modularização</span></span></h1>
+<h1 class="title"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Problemas com funções simples</span></h1>
 </div>
 
 
@@ -341,153 +341,203 @@ window.Quarto = {
 
 
 <span class="math inline">\(\newcommand\Id[1]{\mbox{\textit{#1}}}\)</span>
-<!-- Conversões notas x conceitos -->
-<!-- Problema conversões notas x conceitos -->
-<div id="exr-0053">
+<!-- Função volume de esfera dado o raio -->
+<!-- Função volume de esfera dado o raio -->
+<div id="exr-0046">
 <div class="callout callout-style-simple no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Problema 10.1 [#0053]
+Problema 8.1 [#0046]
 </div>
 </div>
 <div class="callout-body-container callout-body">
 <div>
-<!-- Descrição de situação problema -->
-<!-- Conversões de notas e conceitos -->
-<p>Uma instituição de ensino faz o controle de desempenho dos alunos usando conceitos, como A, B, C etc. no lugar nas notas numéricas.</p>
-<p>Para que cálculos de médias possam ser feitos usando os conceitos, eles precisam ser convertidos para valores numéricos e o resultado convertido para conceito novamente.</p>
-<p>Em particular, a instituição possui a seguinte associação entre conceitos e notas:</p>
-<div class="columns">
-<div class="column" style="width:60%;">
-<table class="table">
-<thead>
-<tr class="header">
-<th style="text-align: center;">Conceito</th>
-<th style="text-align: center;">Valor numérico</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;">A</td>
-<td style="text-align: center;">10,0</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">B</td>
-<td style="text-align: center;">8,5</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">C</td>
-<td style="text-align: center;">6,5</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">D</td>
-<td style="text-align: center;">5,5</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">E</td>
-<td style="text-align: center;">3,0</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">F</td>
-<td style="text-align: center;">0,0</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<p>A conversão de nota numérica para conceito obedece à seguinte associação</p>
-<div class="columns">
-<div class="column" style="width:60%;">
-<table class="table">
-<thead>
-<tr class="header">
-<th style="text-align: center;">Intervalo</th>
-<th style="text-align: center;">Conceito</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;"><span class="math inline">\(n &gt; 9\)</span></td>
-<td style="text-align: center;">A</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;"><span class="math inline">\(8{,}0 &lt; n \leq 9{,}0\)</span></td>
-<td style="text-align: center;">B</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;"><span class="math inline">\(6{,}0 &lt; n \leq 8{,}0\)</span></td>
-<td style="text-align: center;">C</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;"><span class="math inline">\(4{,}0 &lt; n \leq 6{,}0\)</span></td>
-<td style="text-align: center;">D</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;"><span class="math inline">\(0{,}0 &lt; n \leq 4{,}0\)</span></td>
-<td style="text-align: center;">E</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;"><span class="math inline">\(n = 0{,}0\)</span></td>
-<td style="text-align: center;">F</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<p>Na instituição descrita, é preciso calcular a média de três conceitos de um dado aluno, apresentando o conceito final resultante. Escreva um algoritmo para resolver esse problema.</p>
+<p>Escreva uma função para, dado raio de uma esfera, retornar seu volume.</p>
+<p>O volume é dado por <span class="math inline">\(V = \dfrac{4}{3}\pi r^3\)</span>.</p>
+<p><a href="pratica-algoritmos-respostas-modularizacao.html#sol-0046" class="quarto-xref"><img src="icones/resposta.png" height="20"> Resposta&nbsp;<span>12.1</span></a></p>
 </div>
 </div>
 </div>
 </div>
-<!-- Função potência x^k -->
-<!-- Função potência x^k -->
-<div id="exr-0057">
+<!-- Função volume de esfera dado o diâmetro -->
+<!-- Função volume de esfera dado o diâmetro -->
+<div id="exr-0047">
 <div class="callout callout-style-simple no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Problema 10.2 [#0057]
+Problema 8.2 [#0047]
 </div>
 </div>
 <div class="callout-body-container callout-body">
 <div>
-<p>Considere a função abaixo, na qual <span class="math inline">\(v\)</span> é um número real e <span class="math inline">\(k\)</span> é um inteiro:</p>
-<div>
-<figcaption class="figure-caption">
-</figcaption>
-<p><img src="algxpar/pseudocode.5b2fab17dc208988d90f28f7b3bd736a079a3dd9.svg" class="img-fluid" alt="" width="648"></p>
-</div>
-<p>Faça:</p>
-<ul>
-<li>Entenda o código e especifique o que a função retorna;</li>
-<li>Escreva a documentação faltante;</li>
-<li>Identifique o que mais dificultou para descobrir o que a função faz.</li>
-</ul>
+<p>Escreva uma função para, dado diâmetro de uma esfera, retornar seu volume.</p>
+<p>O volume é dado por <span class="math inline">\(V = \dfrac{1}{6}\pi d^3\)</span></p>
+<p><a href="pratica-algoritmos-respostas-modularizacao.html#rem-0047" class="quarto-xref"><img src="icones/comentario.png" height="20"> Comentário&nbsp;<span>12.1</span></a></p>
 </div>
 </div>
 </div>
 </div>
-<!-- Função número de raízes reais distintas -->
-<!-- Função número de raízes reais distintas -->
-<div id="exr-0071">
+<!-- Função máximo de 2 -->
+<!-- Função máximo de 2 -->
+<div id="exr-0043">
 <div class="callout callout-style-simple no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Problema 10.3 [#0071]
+Problema 8.3 [#0043]
 </div>
 </div>
 <div class="callout-body-container callout-body">
 <div>
-<p>Considere uma equação do segundo grau na forma <span class="math inline">\({ax^2 + bx + c = 0}\)</span>.</p>
-<p>Escreva uma função que, dados os valores de <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span> e <span class="math inline">\(c\)</span>, retorne o número de raízes reais distintas que a equação possui.</p>
+<p>Escreva uma função para, dados dois valores numéricos, retornar o valor máximo entre eles.</p>
+<p><a href="pratica-algoritmos-respostas-modularizacao.html#sol-0043" class="quarto-xref"><img src="icones/resposta.png" height="20"> Resposta&nbsp;<span>12.2</span></a></p>
+</div>
+</div>
+</div>
+</div>
+<!-- Função máximo de 3 -->
+<!-- Função máximo de 3 -->
+<div id="exr-0044">
+<div class="callout callout-style-simple no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Problema 8.4 [#0044]
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<div>
+<p>Escreva uma função para, dados três valores numéricos, retornar o valor máximo entre eles.</p>
+<p><a href="pratica-algoritmos-respostas-modularizacao.html#sol-0044" class="quarto-xref"><img src="icones/resposta.png" height="20"> Resposta&nbsp;<span>12.3</span></a></p>
+</div>
+</div>
+</div>
+</div>
+<!-- Função número perfeito -->
+<!-- Função número perfeito -->
+<div id="exr-0045">
+<div class="callout callout-style-simple no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Problema 8.5 [#0045]
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<div>
+<p>Escreva uma função para, dado um valor inteiro positivo, retornar <span class="smallcaps">Verdadeiro</span> se o valor for um número perfeito ou <span class="smallcaps">Falso</span> caso contrário.</p>
+<p>Um número perfeito é todo <span class="math inline">\(n \in \mathbb{Z}^{+*}\)</span> que seja igual à soma de seus divisores (exceto pelo próprio <span class="math inline">\(n\)</span>). Por exemplo, <span class="math inline">\({28 = 1 + 2 + 4 + 7 + 14}\)</span>, sendo um número perfeito.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Função h min s para segundos -->
+<!-- Função h min s para segundos -->
+<div id="exr-0048">
+<div class="callout callout-style-simple no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Problema 8.6 [#0048]
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<div>
+<p>Escreva uma função que receba três parâmetros, todos inteiros: a quantidade de horas, de minutos e de segundos. A função deve retornar o valor equivalente em segundos.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Função h min s para segundos -->
+<!-- Função h min s para horas -->
+<div id="exr-0049">
+<div class="callout callout-style-simple no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Problema 8.7 [#0049]
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<div>
+<p>Escreva uma função que receba três parâmetros, todos inteiros: a quantidade de horas, de minutos e de segundos. A função deve retornar o valor equivalente em horas, com a devida parte decimal.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Função lógica 'é par' -->
+<!-- Função lógica 'é par' -->
+<div id="exr-0051">
+<div class="callout callout-style-simple no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Problema 8.8 [#0051]
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<div>
+<p>Escreva uma função que, dado um valor inteiro qualquer, retorne se ele é par ou não.</p>
+<p>Use a divisão modular (<span class="math inline">\(\bmod\)</span>) para indicar o cálculo.</p>
+<p><a href="pratica-algoritmos-respostas-modularizacao.html#sol-0051" class="quarto-xref"><img src="icones/resposta.png" height="20"> Resposta&nbsp;<span>12.4</span></a></p>
+</div>
+</div>
+</div>
+</div>
+<!-- Função número de divisores -->
+<!-- Função número de divisores -->
+<div id="exr-0056">
+<div class="callout callout-style-simple no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Problema 8.9 [#0056]
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<div>
+<p>Escreva uma função que retorne o número de divisores de um número natural, incluindo ele próprio.</p>
+<p><a href="pratica-algoritmos-respostas-modularizacao.html#rem-0056" class="quarto-xref"><img src="icones/comentario.png" height="20"> Comentário&nbsp;<span>12.2</span></a></p>
+</div>
+</div>
+</div>
+</div>
+<!-- Função lógica 'é divisível' -->
+<!-- Função lógica 'é divisível' -->
+<div id="exr-0072">
+<div class="callout callout-style-simple no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Problema 8.10 [#0072]
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<div>
+<p>Escreva uma função que, dados dois valores inteiros <span class="math inline">\(n\)</span> e <span class="math inline">\(k\)</span>, retorne <span class="smallcaps">Verdadeiro</span> ou <span class="smallcaps">Falso</span> conforme <span class="math inline">\(n\)</span> seja divisível por <span class="math inline">\(k\)</span>.</p>
+<p>Use a divisão modular (<span class="math inline">\(\bmod\)</span>) para indicar o cálculo.</p>
 </div>
 </div>
 </div>
@@ -766,13 +816,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./pratica-algoritmos-problemas-funcoes-projeto.html" class="pagination-link  aria-label=" &lt;span="" de="" funções&lt;="" span&gt;"="">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Projeto de funções</span></span>
+      <a href="./pratica-algoritmos-respostas-repeticoes.html" class="pagination-link  aria-label=" &lt;span="" e="" comentários="" para="" problemas="" selecionados&lt;="" span&gt;"="">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Respostas e comentários para problemas selecionados</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./pratica-algoritmos-problemas-procedimentos-simples.html" class="pagination-link" aria-label="<span class='chapter-number'>11</span>&nbsp; <span class='chapter-title'>Problemas com procedimentos simples</span>">
-        <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Problemas com procedimentos simples</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./pratica-algoritmos-problemas-funcoes-projeto.html" class="pagination-link" aria-label="<span class='chapter-number'>9</span>&nbsp; <span class='chapter-title'>Projeto de funções</span>">
+        <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Projeto de funções</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

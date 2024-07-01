@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Construção de Algoritmos e Programação - 10&nbsp; Problemas gerais envolvendo modularização</title>
+<title>Construção de Algoritmos e Programação - 9&nbsp; Projeto de funções</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -29,8 +29,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./pratica-algoritmos-problemas-procedimentos-simples.html" rel="next">
-<link href="./pratica-algoritmos-problemas-funcoes-projeto.html" rel="prev">
+<link href="./pratica-algoritmos-problemas-gerais-modularizacao.html" rel="next">
+<link href="./pratica-algoritmos-problemas-funcoes-simples.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -110,7 +110,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./pratica-algoritmos-problemas-funcoes-simples.html">Modularização</a></li><li class="breadcrumb-item"><a href="./pratica-algoritmos-problemas-gerais-modularizacao.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Problemas gerais envolvendo modularização</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./pratica-algoritmos-problemas-funcoes-simples.html">Modularização</a></li><li class="breadcrumb-item"><a href="./pratica-algoritmos-problemas-funcoes-projeto.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Projeto de funções</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -240,13 +240,13 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./pratica-algoritmos-problemas-funcoes-projeto.html" class="sidebar-item-text sidebar-link">
+  <a href="./pratica-algoritmos-problemas-funcoes-projeto.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Projeto de funções</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./pratica-algoritmos-problemas-gerais-modularizacao.html" class="sidebar-item-text sidebar-link active">
+  <a href="./pratica-algoritmos-problemas-gerais-modularizacao.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Problemas gerais envolvendo modularização</span></span></a>
   </div>
 </li>
@@ -321,9 +321,9 @@ window.Quarto = {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./pratica-algoritmos-problemas-funcoes-simples.html">Modularização</a></li><li class="breadcrumb-item"><a href="./pratica-algoritmos-problemas-gerais-modularizacao.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Problemas gerais envolvendo modularização</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./pratica-algoritmos-problemas-funcoes-simples.html">Modularização</a></li><li class="breadcrumb-item"><a href="./pratica-algoritmos-problemas-funcoes-projeto.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Projeto de funções</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span id="sec-problemas-modularizacao" class="quarto-section-identifier"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Problemas gerais envolvendo modularização</span></span></h1>
+<h1 class="title"><span id="sec-projeto-funcoes" class="quarto-section-identifier"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Projeto de funções</span></span></h1>
 </div>
 
 
@@ -341,16 +341,38 @@ window.Quarto = {
 
 
 <span class="math inline">\(\newcommand\Id[1]{\mbox{\textit{#1}}}\)</span>
-<!-- Conversões notas x conceitos -->
-<!-- Problema conversões notas x conceitos -->
-<div id="exr-0053">
+<!-- Projeto função: combinação de n, p a p -->
+<!-- Projeto função: combinação de n, p a p -->
+<div id="exr-0050">
 <div class="callout callout-style-simple no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Problema 10.1 [#0053]
+Problema 9.1 [#0050]
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<div>
+<p>O número de combinações de <span class="math inline">\(n\)</span> elementos em grupos contendo <span class="math inline">\(p\)</span> elementos cada um é expresso</p>
+<p><span class="math display">\[ C_p^n = \dfrac{n!}{p!(n-p)!}. \]</span></p>
+<p>Considerando um algoritmo capaz apenas de realizar as operações básicas (somas e multiplicações), identifique quais módulos, na forma de funções, poderiam ser empregados para a realização dos cálculos da combinação.</p>
+<p><a href="pratica-algoritmos-respostas-modularizacao.html#sol-0050" class="quarto-xref"><img src="icones/resposta.png" height="20"> Resposta&nbsp;<span>12.5</span></a></p>
+</div>
+</div>
+</div>
+</div>
+<!-- Projeto função: conversões notas x conceitos -->
+<!-- Projeto função: conversões notas x conceitos -->
+<div id="exr-0052">
+<div class="callout callout-style-simple no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Problema 9.2 [#0052]
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -437,57 +459,12 @@ Problema 10.1 [#0053]
 </table>
 </div>
 </div>
+<p>Considere o seguinte problema:</p>
+<blockquote class="blockquote">
 <p>Na instituição descrita, é preciso calcular a média de três conceitos de um dado aluno, apresentando o conceito final resultante. Escreva um algoritmo para resolver esse problema.</p>
-</div>
-</div>
-</div>
-</div>
-<!-- Função potência x^k -->
-<!-- Função potência x^k -->
-<div id="exr-0057">
-<div class="callout callout-style-simple no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Problema 10.2 [#0057]
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<div>
-<p>Considere a função abaixo, na qual <span class="math inline">\(v\)</span> é um número real e <span class="math inline">\(k\)</span> é um inteiro:</p>
-<div>
-<figcaption class="figure-caption">
-</figcaption>
-<p><img src="algxpar/pseudocode.5b2fab17dc208988d90f28f7b3bd736a079a3dd9.svg" class="img-fluid" alt="" width="648"></p>
-</div>
-<p>Faça:</p>
-<ul>
-<li>Entenda o código e especifique o que a função retorna;</li>
-<li>Escreva a documentação faltante;</li>
-<li>Identifique o que mais dificultou para descobrir o que a função faz.</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<!-- Função número de raízes reais distintas -->
-<!-- Função número de raízes reais distintas -->
-<div id="exr-0071">
-<div class="callout callout-style-simple no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Problema 10.3 [#0071]
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<div>
-<p>Considere uma equação do segundo grau na forma <span class="math inline">\({ax^2 + bx + c = 0}\)</span>.</p>
-<p>Escreva uma função que, dados os valores de <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span> e <span class="math inline">\(c\)</span>, retorne o número de raízes reais distintas que a equação possui.</p>
+</blockquote>
+<p>Com base nessas informações, identifique as potenciais funções que poderiam fazer parte de sua solução.</p>
+<p><a href="pratica-algoritmos-respostas-modularizacao.html#sol-0052" class="quarto-xref"><img src="icones/resposta.png" height="20"> Resposta&nbsp;<span>12.6</span></a></p>
 </div>
 </div>
 </div>
@@ -766,13 +743,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./pratica-algoritmos-problemas-funcoes-projeto.html" class="pagination-link  aria-label=" &lt;span="" de="" funções&lt;="" span&gt;"="">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Projeto de funções</span></span>
+      <a href="./pratica-algoritmos-problemas-funcoes-simples.html" class="pagination-link  aria-label=" &lt;span="" com="" funções="" simples&lt;="" span&gt;"="">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Problemas com funções simples</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./pratica-algoritmos-problemas-procedimentos-simples.html" class="pagination-link" aria-label="<span class='chapter-number'>11</span>&nbsp; <span class='chapter-title'>Problemas com procedimentos simples</span>">
-        <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Problemas com procedimentos simples</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./pratica-algoritmos-problemas-gerais-modularizacao.html" class="pagination-link" aria-label="<span class='chapter-number'>10</span>&nbsp; <span class='chapter-title'>Problemas gerais envolvendo modularização</span>">
+        <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Problemas gerais envolvendo modularização</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
