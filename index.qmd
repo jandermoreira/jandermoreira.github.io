@@ -1,0 +1,66 @@
+<!-- # Jander Moreira {.unlisted} -->
+
+::: {.grid}
+:::
+
+
+::: {.grid}
+
+::: {.g-col-4}
+![Professor associado](jander.jpg)
+
+:::
+
+::: {.g-col-4}
+## Contato
+
+- Sala: G32 (piso superior do DC)
+- E-mail: jander@ufscar.br
+- Telefone: +55 (16) 3351-8585
+
+## Vinculação
+
+- [Departamento de Computação](https://www.dc.ufscar.br){target="_blank"}
+- [Universidade Federal de São Carlos](https://www.ufscar.br){target="_blank"}
+
+## Formação
+
+Graduado em Ciência da Computação ([UFSCar](https://www.ufscar.br){target="_blank"})
+
+Mestre em Ciência da Computação ([PPG-CC/UFSCar](https://www.ppgcc.ufscar.br){target="_blank"})
+
+Doutor em Física Computacional ([IFSC/USP](https://www.ifsc.usp.br){target="_blank"})
+:::
+
+::: {.g-col-4}
+## Disciplinas
+
+- Construção de Algoritmos e Programação
+- Organização e Recuperação da Informação
+- Programação e Algoritmos\ 1
+- Introdução à Computação
+
+## Interesses
+
+- Semana da Computação da UFSCar ([SECOMP](https://www.secompufscar.com.br){target="_blank"})
+- Comissão Permanente de Ética da UFSCar ([CPE](http://www.cpe.ufscar.br){target="_blank"})
+- Metodologias ativas ([MetAA](https://www.metaa.ufscar.br){target="_blank"})
+
+## Material
+
+::: {.callout-warning}
+Material em produção
+:::
+
+- [Construção de algoritmos e programação](./github-index.html)
+
+:::
+
+:::
+
+
+<!-- 
+::: {.footer}
+[Ilham Fitrotul Hayat - Flaticon](https://www.flaticon.com/free-icons/email)
+:::
+-->

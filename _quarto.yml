@@ -1,0 +1,25 @@
+project:
+  type: website
+  output-dir: /home/jander/pessoal/jandermoreira.github.io/
+
+website:
+  title: "Jander Moreira"
+  description: "Informções gerais sobre mim"
+  image: escritorio.png
+  site-url: "https://jandermoreira.github.io"
+  navbar: true
+    # left:
+    #   - href: index.qmd
+    #     text: "![](house.png){width=16}"
+  search: false
+  
+
+
+format:
+  html:
+    lang: "pt-BR"
+    theme: simplex
+    css: styles.css
+    toc: true
+
+
