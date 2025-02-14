@@ -46,21 +46,11 @@ Doutor em Física Computacional ([IFSC/USP](https://www.ifsc.usp.br){target="_bl
 - Comissão Permanente de Ética da UFSCar ([CPE](http://www.cpe.ufscar.br){target="_blank"})
 - Metodologias ativas ([MetAA](https://www.metaa.ufscar.br){target="_blank"})
 
-## Material
+## Pessoal
 
-::: {.callout-warning}
-Material em produção
-:::
 
-- [Construção de algoritmos e programação](./github-index.html)
+- [Portfolio](./portfolio.qmd)
 
 :::
 
 :::
-
-
-<!-- 
-::: {.footer}
-[Ilham Fitrotul Hayat - Flaticon](https://www.flaticon.com/free-icons/email)
-:::
--->
