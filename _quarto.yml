@@ -1,6 +1,6 @@
 project:
   type: website
-  output-dir: /home/jander/pessoal/jandermoreira.github.io/
+  # output-dir: _site
 
 website:
   title: "Jander Moreira"
