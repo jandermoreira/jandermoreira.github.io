@@ -44,29 +44,36 @@
   {
     "objectID": "portfolio.html",
     "href": "portfolio.html",
-    "title": "Jander Moreira",
+    "title": "Jander Moreira’s portfolio",
     "section": "",
-    "text": "GitHub: \nCTAN:"
+    "text": "GitHub:  CTAN:"
   },
   {
     "objectID": "portfolio.html#latex",
     "href": "portfolio.html#latex",
-    "title": "Jander Moreira",
+    "title": "Jander Moreira’s portfolio",
     "section": "\\(\\LaTeX\\)",
     "text": "\\(\\LaTeX\\)\n\n\n\n\n\n\n\n\nPackages\n\n\n\n\n\n\nalgxpar\nThis package streamlines pseudocode creation by effectively managing lengthy lines without disrupting formatting integrity. It further introduces visualization styles and keyword a translation system.\n \n\n\npackdoc\nThe packdocs package offers a variety of features for documenting \\(\\LaTeX\\) packages, ensuring consistent presentation, cross-referencing, and index generation. It also supports version and change tracking to maintain a consistent change history.\n \n\n\ndsdraw\nDesign schematic layouts for data structures, including arrays, linked lists, and related constructs.\n\n\n\npalettize\nEnhance documents with color via styled text blocks and formatted lists, sourced from predefined color palettes.\n\n\n\nfolha de ponto\nMonta uma folha de ponto mensal simples para empregado doméstico.\n\n\n\n\n\n\n\n\n\n\n\n\nBeamer\n\n\n\n\n\n\nLALIC theme\nTheme for LALIC"
   },
   {
     "objectID": "portfolio.html#quarto",
     "href": "portfolio.html#quarto",
-    "title": "Jander Moreira",
+    "title": "Jander Moreira’s portfolio",
     "section": "Quarto",
     "text": "Quarto\n\n\n\n\n\n\n\n\nModules\n\n\n\n\n\n\nalgxpar-quarto\nIntegrates the algxpar package with Quarto."
   },
   {
-    "objectID": "portfolio.html#other-things",
-    "href": "portfolio.html#other-things",
-    "title": "Jander Moreira",
-    "section": "Other things",
-    "text": "Other things\n\n\n\n\n\n\n\n\nProduct\n\n\n\n\n\n\ntyping\nProgram typing animation for video production."
+    "objectID": "portfolio.html#tools",
+    "href": "portfolio.html#tools",
+    "title": "Jander Moreira’s portfolio",
+    "section": "Tools",
+    "text": "Tools\n\n\n\n\n\n\n\n\nProduct\n\n\n\n\n\n\ntyping\nProgram typing animation for video production."
+  },
+  {
+    "objectID": "portfolio.html#learning-and-teaching-resources",
+    "href": "portfolio.html#learning-and-teaching-resources",
+    "title": "Jander Moreira’s portfolio",
+    "section": "Learning and Teaching Resources",
+    "text": "Learning and Teaching Resources\n\n\n\n\n\n\n\n\nText\n\n\n\n\n\n\nCAP\nConstrução de Algoritmos e Programação\n\n\n\n\n\n\n\n\n\n\n\n\nVideo\n\n\n\n\n\n\ntyping\nProgram typing animation for video production."
   }
 ]
