@@ -2,6 +2,9 @@ project:
   type: website
   # output-dir: _site
 
+filters: 
+  - portfolio.lua
+
 website:
   title: "Jander Moreira"
   description: "Informções gerais sobre mim"
@@ -18,6 +21,6 @@ website:
 format:
   html:
     lang: "pt-BR"
-    theme: simplex
+    theme: cyborg
     css: styles.css
     toc: true

@@ -1,32 +1,32 @@
 ---
-title: Jander Moreira
+title: Jander Moreira's portfolio
 search: true
 table-of-contents: true 
+# navbar: false
 lang: "en"
-filters: 
-    - portfolio.lua
 ---
 
-* GitHub: [![GitHub](/github.png)](https://github.com/jandermoreira){target="_blank"}
-* CTAN: [![CTAN](/ctan.png)](https://ctan.org/author/moreira){target="_blank"}
+
+GitHub: [![GitHub](/github.png)](https://github.com/jandermoreira){target="_blank"}
+CTAN: [![CTAN](/ctan.png)](https://ctan.org/author/moreira){target="_blank"}
 
 ## $\LaTeX$
 
 
-| Packages | | |
-| :--- | :--- | ---: |
-| algxpar  | This package streamlines pseudocode creation by effectively managing lengthy lines without disrupting formatting integrity. It further introduces visualization styles and keyword a translation system. | ++gh:algxpar ++ctan:algxpar |
-| packdoc  | The packdocs package offers a variety of features for documenting $\LaTeX$ packages, ensuring consistent presentation, cross-referencing, and index generation. It also supports version and change tracking to maintain a consistent change history. | ++gh:packdoc ++ctan:packdoc |
-|dsdraw| Design schematic layouts for data structures, including arrays, linked lists, and related constructs. | ++gh:dsdraw |
-| palettize| Enhance documents with color via styled text blocks and formatted lists, sourced from predefined color palettes.| ++gh:palettize |
-| folha de ponto | Monta uma folha de ponto mensal simples para empregado doméstico. | ++gh:folha-de-ponto |
+| Packages       |                                                                                                                                                                                                                                                       |                             |
+| :------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------: |
+| algxpar        | This package streamlines pseudocode creation by effectively managing lengthy lines without disrupting formatting integrity. It further introduces visualization styles and keyword a translation system.                                              | ++gh:algxpar ++ctan:algxpar |
+| packdoc        | The packdocs package offers a variety of features for documenting $\LaTeX$ packages, ensuring consistent presentation, cross-referencing, and index generation. It also supports version and change tracking to maintain a consistent change history. | ++gh:packdoc ++ctan:packdoc |
+| dsdraw         | Design schematic layouts for data structures, including arrays, linked lists, and related constructs.                                                                                                                                                 |                 ++gh:dsdraw |
+| palettize      | Enhance documents with color via styled text blocks and formatted lists, sourced from predefined color palettes.                                                                                                                                      |              ++gh:palettize |
+| folha de ponto | Monta uma folha de ponto mensal simples para empregado doméstico.                                                                                                                                                                                     |         ++gh:folha-de-ponto |
 
 : {tbl-colwidths="[1, 5, 1]"}
 
 
 
-| Beamer | | |
-| :--- | :--- | ---: |
+| Beamer      |                 |                                               |
+| :---------- | :-------------- | --------------------------------------------: |
 | LALIC theme | Theme for LALIC | ++gh:beamerthemelalic ++ctan:beamerthemelalic |
 
 : {tbl-colwidths="[1, 5, 1]"}
@@ -34,17 +34,34 @@ filters:
 
 ## Quarto
 
-| Modules | | |
-| :--- | :--- | ---: |
+| Modules        |                                             |                     |
+| :------------- | :------------------------------------------ | ------------------: |
 | algxpar-quarto | Integrates the algxpar package with Quarto. | ++gh:algxpar-quarto |
 
 : {tbl-colwidths="[1, 5, 1]"}
 
 
-## Other things
+## Tools
 
-| Product | | |
-| :--- | :--- | ---: |
+| Product |                                                |             |
+| :------ | :--------------------------------------------- | ----------: |
+| typing  | Program typing animation for video production. | ++gh:typing |
+
+: {tbl-colwidths="[1, 5, 1]"}
+
+
+
+## Learning and Teaching Resources
+
+| Text |                                        |                                                                   |
+| :--- | :------------------------------------- | ----------------------------------------------------------------: |
+| CAP  | Construção de Algoritmos e Programação | [++www](https://jandermoreira.github.io/algoritmos_e_programacao) |
+
+: {tbl-colwidths="[1, 5, 1]"}
+
+
+| Video  |                                                |             |
+| :----- | :--------------------------------------------- | ----------: |
 | typing | Program typing animation for video production. | ++gh:typing |
 
 : {tbl-colwidths="[1, 5, 1]"}
