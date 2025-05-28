@@ -43,7 +43,8 @@ Doutor em Física Computacional ([IFSC/USP](https://www.ifsc.usp.br){target="_bl
 ## Interesses
 
 - Semana da Computação da UFSCar ([SECOMP](https://www.secompufscar.com.br){target="_blank"})
-- Comissão Permanente de Ética da UFSCar ([CPE](http://www.cpe.ufscar.br){target="_blank"})
+- Comissão Permanente de Ética da UFSCar ([CPE](https://www.cpe.ufscar.br){target="_blank"})
+- Ensino e Aprendizagem no DC ([EADC](https://eadc.ufscar.br){target="_blank"})
 - Metodologias ativas ([MetAA](https://www.metaa.ufscar.br){target="_blank"})
 
 ## Pessoal
