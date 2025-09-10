@@ -60,7 +60,7 @@
     "href": "portfolio.html#quarto",
     "title": "Jander Moreira’s portfolio",
     "section": "Quarto",
-    "text": "Quarto\n\n\n\n\n\n\n\n\nModules\n\n\n\n\n\n\nalgxpar-quarto\nIntegrates the algxpar package with Quarto."
+    "text": "Quarto\n\n\n\n\n\n\n\n\nModules\n\n\n\n\n\n\nalgxpar-quarto\nIntegrates the algxpar package with Quarto.\n\n\n\nquarto-xvolume\nSupports crossrefence among a multi-volume book collection."
   },
   {
     "objectID": "portfolio.html#tools",
